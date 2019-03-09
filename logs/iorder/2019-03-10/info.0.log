@@ -1,0 +1,30 @@
+[INFO ] 2019-03-10 01:09:39 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-ITMS36G with PID 9780 (E:\IdeaWorkspace\secondhand-house-trade\target\classes started by Andy in E:\IdeaWorkspace\secondhand-house-trade)
+[INFO ] 2019-03-10 01:09:39 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-03-10 01:09:39 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-03-10 01:09:39 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-10 01:09:39 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-03-10 01:09:39 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-03-10 01:09:39 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Program Files\nodejs\;G:\Git\cmd;G:\redis\;G:\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Andy\AppData\Roaming\npm;;G:\Microsoft VS Code\bin;.]
+[INFO ] 2019-03-10 01:09:39 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-03-10 01:09:39 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4744 ms
+[INFO ] 2019-03-10 01:09:39 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-10 01:09:39 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-03-10 01:09:39 [main] c.j.secondhandhousetrade.Application - Started Application in 9.996 seconds (JVM running for 13.141)
+[INFO ] 2019-03-10 01:09:39 [http-nio-10001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-03-10 01:09:39 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-03-10 01:09:39 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[INFO ] 2019-03-10 01:16:49 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-ITMS36G with PID 5768 (E:\IdeaWorkspace\secondhand-house-trade\target\classes started by Andy in E:\IdeaWorkspace\secondhand-house-trade)
+[INFO ] 2019-03-10 01:16:49 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-03-10 01:16:49 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-03-10 01:16:49 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-10 01:16:49 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-03-10 01:16:49 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-03-10 01:16:49 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Program Files\nodejs\;G:\Git\cmd;G:\redis\;G:\apache-maven-3.5.4\bin;C:\Program Files\TortoiseSVN\bin;C:\Users\Andy\AppData\Roaming\npm;;G:\Microsoft VS Code\bin;.]
+[INFO ] 2019-03-10 01:16:49 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-03-10 01:16:49 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4716 ms
+[INFO ] 2019-03-10 01:16:49 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-10 01:16:49 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-03-10 01:16:49 [main] c.j.secondhandhousetrade.Application - Started Application in 8.773 seconds (JVM running for 9.832)
+[INFO ] 2019-03-10 01:16:49 [http-nio-10001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-03-10 01:16:49 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-03-10 01:16:49 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
