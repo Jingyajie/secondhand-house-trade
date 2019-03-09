@@ -1,0 +1,102 @@
+[INFO ] 2019-03-09 14:32:18 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-7MLKDE8 with PID 11600 (D:\workspace\secondhand-house-trade\target\classes started by goddness in D:\workspace\secondhand-house-trade)
+[INFO ] 2019-03-09 14:32:18 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-03-09 14:32:18 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-03-09 14:32:18 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 14:32:18 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-03-09 14:32:18 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-03-09 14:32:18 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.8.0_101\bin;D:\MySQL\MySQL Server 5.5\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Users\女神\AppData\Local\Microsoft\WindowsApps;D:\apache-maven-3.5.2\bin\;;.]
+[INFO ] 2019-03-09 14:32:18 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-03-09 14:32:18 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2433 ms
+[INFO ] 2019-03-09 14:32:18 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 14:32:18 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-03-09 14:32:18 [main] c.j.secondhandhousetrade.Application - Started Application in 6.109 seconds (JVM running for 8.457)
+[INFO ] 2019-03-09 14:32:18 [http-nio-10001-exec-2] o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1530617881,1530666236,1530756915] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[INFO ] 2019-03-09 14:32:18 [http-nio-10001-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-03-09 14:32:18 [http-nio-10001-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-03-09 14:32:18 [http-nio-10001-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+[INFO ] 2019-03-09 14:33:49 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-7MLKDE8 with PID 1812 (D:\workspace\secondhand-house-trade\target\classes started by goddness in D:\workspace\secondhand-house-trade)
+[INFO ] 2019-03-09 14:33:49 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-03-09 14:33:49 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-03-09 14:33:49 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 14:33:49 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-03-09 14:33:49 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-03-09 14:33:49 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.8.0_101\bin;D:\MySQL\MySQL Server 5.5\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Users\女神\AppData\Local\Microsoft\WindowsApps;D:\apache-maven-3.5.2\bin\;;.]
+[INFO ] 2019-03-09 14:33:49 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-03-09 14:33:49 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2062 ms
+[INFO ] 2019-03-09 14:33:49 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 14:33:49 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-03-09 14:33:49 [main] c.j.secondhandhousetrade.Application - Started Application in 4.643 seconds (JVM running for 6.109)
+[INFO ] 2019-03-09 14:33:49 [http-nio-10001-exec-2] o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1530617881,1530666236,1530756915] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[INFO ] 2019-03-09 14:33:49 [http-nio-10001-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-03-09 14:33:49 [http-nio-10001-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-03-09 14:33:49 [http-nio-10001-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+[INFO ] 2019-03-09 14:58:59 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-7MLKDE8 with PID 15584 (D:\workspace\secondhand-house-trade\target\classes started by goddness in D:\workspace\secondhand-house-trade)
+[INFO ] 2019-03-09 14:58:59 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-03-09 14:58:59 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-03-09 14:58:59 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 14:58:59 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-03-09 14:58:59 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-03-09 14:58:59 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.8.0_101\bin;D:\MySQL\MySQL Server 5.5\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Users\女神\AppData\Local\Microsoft\WindowsApps;D:\apache-maven-3.5.2\bin\;;.]
+[INFO ] 2019-03-09 14:58:59 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-03-09 14:58:59 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1889 ms
+[INFO ] 2019-03-09 14:58:59 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 14:58:59 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-03-09 14:58:59 [main] c.j.secondhandhousetrade.Application - Started Application in 5.417 seconds (JVM running for 7.217)
+[INFO ] 2019-03-09 14:58:59 [http-nio-10001-exec-2] o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1530617881,1530666236,1530756915] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[INFO ] 2019-03-09 14:58:59 [http-nio-10001-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-03-09 14:58:59 [http-nio-10001-exec-2] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-03-09 14:58:59 [http-nio-10001-exec-2] o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+[INFO ] 2019-03-09 15:30:39 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-7MLKDE8 with PID 11892 (D:\workspace\secondhand-house-trade\target\classes started by goddness in D:\workspace\secondhand-house-trade)
+[INFO ] 2019-03-09 15:30:39 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-03-09 15:30:39 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-03-09 15:30:39 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 15:30:39 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-03-09 15:30:39 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-03-09 15:30:39 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.8.0_101\bin;D:\MySQL\MySQL Server 5.5\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Users\女神\AppData\Local\Microsoft\WindowsApps;D:\apache-maven-3.5.2\bin\;;.]
+[INFO ] 2019-03-09 15:30:39 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-03-09 15:30:39 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2957 ms
+[INFO ] 2019-03-09 15:30:39 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 15:30:39 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-03-09 15:30:39 [main] c.j.secondhandhousetrade.Application - Started Application in 7.759 seconds (JVM running for 10.196)
+[INFO ] 2019-03-09 15:30:39 [http-nio-10001-exec-9] o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1530617881,1530666236,1530756915] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[INFO ] 2019-03-09 15:30:39 [http-nio-10001-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-03-09 15:30:39 [http-nio-10001-exec-9] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-03-09 15:30:39 [http-nio-10001-exec-9] o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+[INFO ] 2019-03-09 15:41:08 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-7MLKDE8 with PID 11764 (D:\workspace\secondhand-house-trade\target\classes started by goddness in D:\workspace\secondhand-house-trade)
+[INFO ] 2019-03-09 15:41:08 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-03-09 15:41:08 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-03-09 15:41:08 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 15:41:08 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-03-09 15:41:08 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-03-09 15:41:08 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.8.0_101\bin;D:\MySQL\MySQL Server 5.5\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Users\女神\AppData\Local\Microsoft\WindowsApps;D:\apache-maven-3.5.2\bin\;;.]
+[INFO ] 2019-03-09 15:41:08 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-03-09 15:41:08 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3306 ms
+[INFO ] 2019-03-09 15:41:08 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 15:41:08 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-03-09 15:41:08 [main] c.j.secondhandhousetrade.Application - Started Application in 7.873 seconds (JVM running for 10.623)
+[INFO ] 2019-03-09 15:41:08 [http-nio-10001-exec-1] o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1530617881,1530666236,1530756915] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[INFO ] 2019-03-09 15:41:08 [http-nio-10001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-03-09 15:41:08 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-03-09 15:41:08 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+[INFO ] 2019-03-09 16:08:01 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-7MLKDE8 with PID 804 (D:\workspace\secondhand-house-trade\target\classes started by goddness in D:\workspace\secondhand-house-trade)
+[INFO ] 2019-03-09 16:08:01 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-03-09 16:08:01 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-03-09 16:08:01 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 16:08:01 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-03-09 16:08:01 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-03-09 16:08:01 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_101\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Program Files\Java\jdk1.8.0_101\bin;D:\MySQL\MySQL Server 5.5\bin;C:\WINDOWS\System32\OpenSSH\;D:\Git\cmd;C:\Users\女神\AppData\Local\Microsoft\WindowsApps;D:\apache-maven-3.5.2\bin\;;.]
+[INFO ] 2019-03-09 16:08:01 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-03-09 16:08:01 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3227 ms
+[INFO ] 2019-03-09 16:08:01 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-03-09 16:08:01 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-03-09 16:08:01 [main] c.j.secondhandhousetrade.Application - Started Application in 7.127 seconds (JVM running for 9.334)
+[INFO ] 2019-03-09 16:08:01 [http-nio-10001-exec-1] o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1530617881,1530666236,1530756915] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+[INFO ] 2019-03-09 16:08:01 [http-nio-10001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-03-09 16:08:01 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-03-09 16:08:01 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 29 ms
