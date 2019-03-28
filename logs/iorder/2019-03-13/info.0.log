@@ -1,0 +1,2 @@
+[INFO ] 2019-03-12 15:54:50 [http-nio-10001-exec-10] o.a.tomcat.util.http.parser.Cookie - A cookie header was received [1530617881,1530666236,1530756915] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.

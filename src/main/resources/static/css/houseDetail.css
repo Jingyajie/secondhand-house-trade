@@ -1,0 +1,108 @@
+.houseDetail-row{
+    margin-top: 100px;
+}
+
+.houseDetail-text{
+    color: #707070;
+    font-family: 幼圆;
+    font-size: medium;
+    margin-top: 15px;
+}
+
+.houseDetail-text1{
+    color: #c12e2a;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.houseDetail-wan{
+    color: #c9302c;
+    font-size: large;
+
+}
+
+.houseDetail-goal{
+    color: #c12e2a;
+    font-size: medium;
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.houseDetail-row1{
+    margin-top: 5px;
+}
+
+.houseDetail-row2{
+    margin-top: 25px;
+}
+
+.houseDetail-attention{
+    text-align: right;
+}
+
+.houseDetail-text2{
+    color: #707070;
+    font-family: 幼圆;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.houseDetail-text3{
+    color: #707070;
+    font-family: 幼圆;
+    font-size:medium;
+}
+
+.houseDetail-detail-row{
+    margin-top: 50px;
+}
+
+.houseDetail-detail-row1{
+    margin-top: 20px;
+}
+
+.houseDetail-detail-title{
+    color: #707070;
+    font-family: 幼圆;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.houseDetail-text4{
+    color: #707070;
+    font-family: 幼圆;
+    font-size:medium;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.houseDetail-lable{
+    color: #707070;
+    font-family: 幼圆;
+    font-size:medium;
+    text-align: right;
+}
+
+.houseDetail-lable2{
+    color: #707070;
+    font-family: 幼圆;
+    font-size:large;
+    text-align: right;
+}
+
+.houseDetail-lable1{
+    color: #707070;
+    font-family: 幼圆;
+    font-size:medium;
+}
+
+.houseDetail-lable-context{
+    color: #707070;
+    font-family: 幼圆;
+    font-size:medium;
+}
+
+.houseDetail-foot{
+    margin-top: 80px;
+}

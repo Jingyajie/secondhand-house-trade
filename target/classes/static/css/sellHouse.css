@@ -1,0 +1,64 @@
+.sellHouse-text-row{
+    margin-top: 100px;
+}
+
+.sellHouse-text-row1{
+    margin-top: 10px;
+}
+
+.sellHouse-input-row{
+    margin-top: 50px;
+}
+.sellHouse-input-row1{
+    margin-top: 30px;
+}
+
+.sellHouse-foot-row{
+    margin-top: 100px;
+}
+
+.sellHouse-hr{
+    margin-top: 150px;
+    text-align: center;
+}
+
+.sellHouse-foot-text{
+    text-align: center;
+}
+
+.sellHouse-boarder{
+    background: #ffffff;
+    width: 750px;
+    height: 1630px;
+    padding-top: 50px;
+}
+
+.sellHouse-title{
+    color: #707070;
+    font-size: medium;
+}
+
+.sellHouse-mark{
+    color: #c9302c;
+    font-size: medium;
+}
+
+.sellHouse-text-style{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 幼圆;
+    color: #ffffff;
+}
+
+.sellHouse-text-style1{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: 幼圆;
+    color: #ffffff;
+}
+
+.sellHouse-button{
+    text-align: right;
+}
