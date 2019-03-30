@@ -13,9 +13,13 @@ public class Demo {
 	private String name;
 
 	public Demo() {
-		this.name = name;
 	}
 
+
+	public Demo(String id, String name) {
+		this.id = id;
+		this.name = name;
+	}
 
 	public String getId() {
 		return id;

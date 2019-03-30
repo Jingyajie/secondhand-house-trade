@@ -20,8 +20,39 @@ public class IndexController {
 	public String demo(){
 		return "modules/demo/index";
 	}
-	@GetMapping(value = "/home")
-	public String home(){
-		return "modules/home/home";
+
+	@GetMapping(value = "/houseHome")
+	public String house(){
+		return "modules/house/houseHome";
+	}
+
+	@GetMapping(value = "/sellHouse")
+	public String sellHouse(){
+		return "modules/house/sellHouse";
+	}
+
+	@GetMapping(value = "/personalCenter")
+	public String personalCenter() {
+		return "modules/user/personalCenter";
+	}
+
+	@GetMapping(value = "/agentCenter")
+	public String agentCenter() {
+		return "modules/user/agentCenter";
+	}
+
+	@GetMapping(value = "/houseDetail")
+	public String houseDetail() {
+		return "modules/house/houseDetail";
+	}
+
+	@GetMapping(value = "/agentDetail")
+	public String agentDetail() {
+		return "modules/agent/agentDetail";
+	}
+
+	@GetMapping(value = "/sellPlan")
+	public String sellPlan() {
+		return "modules/house/sellPlan";
 	}
 }
