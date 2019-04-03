@@ -1,17 +1,23 @@
 package com.jyj.secondhandhousetrade.config;
 
-		import com.alibaba.druid.pool.DruidDataSource;
-		import org.apache.ibatis.session.SqlSessionFactory;
-		import org.mybatis.spring.SqlSessionFactoryBean;
-		import org.mybatis.spring.SqlSessionTemplate;
-		import org.springframework.beans.factory.annotation.Value;
-		import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
-		import org.springframework.context.annotation.Bean;
-		import org.springframework.context.annotation.Configuration;
-		import org.springframework.context.annotation.Primary;
-		import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-		import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-		import org.springframework.transaction.annotation.EnableTransactionManagement;
+import com.alibaba.druid.pool.DruidDataSource;
+import com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceBuilder;
+import com.alibaba.druid.support.http.StatViewServlet;
+import com.alibaba.druid.support.http.WebStatFilter;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * @author Andy
@@ -22,15 +28,50 @@ package com.jyj.secondhandhousetrade.config;
 @Configuration
 @EnableTransactionManagement
 public class MasterDataSourceConfig {
+	/**
+	 * Method Description: Created by whx
+	 * 〈 配置druid web访问页面 〉
+	 *
+	 * @return ServletRegistrationBean
+	 * @throws
+	 * @date 04/03/2019 15:31
+	 */
+	@Bean
+	public ServletRegistrationBean<StatViewServlet> statViewServlet() {
+		ServletRegistrationBean<StatViewServlet> servletRegistrationBean = new ServletRegistrationBean<>(new StatViewServlet(), "/druid/*");
 
-	@Value("${master.datasource.druid.url}")
-	private String url;
-	@Value("${master.datasource.druid.driverClassName}")
-	private String driverClassName;
-	@Value("${master.datasource.druid.username}")
-	private String username;
-	@Value("${master.datasource.druid.password}")
-	private String password;
+		servletRegistrationBean.addInitParameter("enabled", "true");
+		//白名单：
+		servletRegistrationBean.addInitParameter("allow", "127.0.0.1");
+		//IP黑名单 (存在共同时，deny优先于allow) : 如果满足deny的即提示:Sorry, you are not permitted to view this page.
+		servletRegistrationBean.addInitParameter("deny", "192.168.1.100");
+		//登录查看信息的账号密码.
+		servletRegistrationBean.addInitParameter("loginUsername", "druid");
+		servletRegistrationBean.addInitParameter("loginPassword", "druid");
+		//是否能够重置数据.
+		servletRegistrationBean.addInitParameter("resetEnable", "false");
+		return servletRegistrationBean;
+	}
+
+	/**
+	 * Method Description: Created by whx
+	 * 〈 配置druid过滤器 〉
+	 *
+	 * @return FilterRegistrationBean
+	 * @throws
+	 * @date 04/03/2019 15:31
+	 */
+	@Bean
+	public FilterRegistrationBean<WebStatFilter> filterRegistrationBean() {
+		FilterRegistrationBean<WebStatFilter> filterRegistrationBean = new FilterRegistrationBean<>(new WebStatFilter());
+		//添加过滤规则.
+		filterRegistrationBean.addUrlPatterns("/*");
+		//添加不需要忽略的格式信息.
+		filterRegistrationBean.addInitParameter("exclusions", "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*");
+		filterRegistrationBean.addInitParameter("enabled", "true");
+		filterRegistrationBean.addInitParameter("profile-enable", "true");
+		return filterRegistrationBean;
+	}
 
 	/**
 	 * Method Description: Created by whx
@@ -41,13 +82,9 @@ public class MasterDataSourceConfig {
 	 */
 	@Primary
 	@Bean(name = "masterDatasource")
+	@ConfigurationProperties("master.datasource.druid")
 	public DruidDataSource dataSource() {
-		DruidDataSource ds = new DruidDataSource();
-		ds.setUrl(url);
-		ds.setDriverClassName(driverClassName);
-		ds.setUsername(username);
-		ds.setPassword(password);
-		return ds;
+		return DruidDataSourceBuilder.create().build();
 	}
 
 	@Primary

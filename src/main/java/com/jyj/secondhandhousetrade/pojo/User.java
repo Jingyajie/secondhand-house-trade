@@ -2,6 +2,8 @@ package com.jyj.secondhandhousetrade.pojo;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author jyj
@@ -11,109 +13,119 @@ import java.time.LocalDateTime;
  */
 
 public class User {
-    private int id;
-    private String username;
-    private String password;
-    private String email;
-    private String phone;
-    private int type;
-    private  String nickname;
-    private String headImg;
-    private int status;
-    LocalDateTime insertTime;
+	private int id;
+	private String username;
+	private String password;
+	private String email;
+	private String phone;
+	private int type;
+	private String nickname;
+	private String headImg;
+	private int status;
+	private Set<Role> roles = new HashSet<>();
+	LocalDateTime insertTime;
 
-    public User() {
-    }
 
-    public User(int id) {
-        this.id = id;
-    }
+	public User() {
+	}
 
-    public User(String username) {
-        this.username = username;
-    }
+	public Set<Role> getRoles() {
+		return roles;
+	}
 
-    public User(LocalDateTime insertTime) {
-        this.insertTime = insertTime;
-    }
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
 
-    public int getId() {
-        return id;
-    }
+	public User(int id) {
+		this.id = id;
+	}
 
-    public void setId(int id) {
-        this.id = id;
-    }
+	public User(String username) {
+		this.username = username;
+	}
 
-    public String getUsername() {
-        return username;
-    }
+	public User(LocalDateTime insertTime) {
+		this.insertTime = insertTime;
+	}
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public int getId() {
+		return id;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public void setId(int id) {
+		this.id = id;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+	public String getPassword() {
+		return password;
+	}
 
-    public String getPhone() {
-        return phone;
-    }
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+	public String getEmail() {
+		return email;
+	}
 
-    public int getType() {
-        return type;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public void setType(int type) {
-        this.type = type;
-    }
+	public String getPhone() {
+		return phone;
+	}
 
-    public String getNickname() {
-        return nickname;
-    }
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
+	public int getType() {
+		return type;
+	}
 
-    public String getHeadImg() {
-        return headImg;
-    }
+	public void setType(int type) {
+		this.type = type;
+	}
 
-    public void setHeadImg(String headImg) {
-        this.headImg = headImg;
-    }
+	public String getNickname() {
+		return nickname;
+	}
 
-    public int getStatus() {
-        return status;
-    }
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
 
-    public void setStatus(int status) {
-        this.status = status;
-    }
+	public String getHeadImg() {
+		return headImg;
+	}
 
-    public LocalDateTime getInsertTime() {
-        return insertTime;
-    }
+	public void setHeadImg(String headImg) {
+		this.headImg = headImg;
+	}
 
-    public void setInsertTime(LocalDateTime insertTime) {
-        this.insertTime = insertTime;
-    }
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public LocalDateTime getInsertTime() {
+		return insertTime;
+	}
+
+	public void setInsertTime(LocalDateTime insertTime) {
+		this.insertTime = insertTime;
+	}
 }
