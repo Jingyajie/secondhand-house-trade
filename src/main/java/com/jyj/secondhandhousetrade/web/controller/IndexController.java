@@ -1,6 +1,14 @@
 package com.jyj.secondhandhousetrade.web.controller;
+
+import com.jyj.secondhandhousetrade.pojo.User;
+import com.jyj.secondhandhousetrade.service.UserService;
+import org.apache.ibatis.annotations.Arg;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author Andy
@@ -11,23 +19,27 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class IndexController {
+
+	@Autowired
+	private UserService userService;
+
 	@GetMapping(value = {"/demo"})
 	public String index() {
 		return "modules/demo/demo";
 	}
 
 	@GetMapping(value = "/index")
-	public String demo(){
+	public String demo() {
 		return "modules/demo/index";
 	}
 
 	@GetMapping(value = "/houseHome")
-	public String house(){
+	public String house() {
 		return "modules/house/houseHome";
 	}
 
 	@GetMapping(value = "/sellHouse")
-	public String sellHouse(){
+	public String sellHouse() {
 		return "modules/house/sellHouse";
 	}
 
@@ -54,5 +66,18 @@ public class IndexController {
 	@GetMapping(value = "/sellPlan")
 	public String sellPlan() {
 		return "modules/house/sellPlan";
+	}
+
+	@PostMapping(value = "/register")
+	public String register(@RequestBody User user) {
+		userService.register(user);
+		return null;
+	}
+
+	@PostMapping(value = "login")
+	public String login(@RequestParam("account") String account,
+	                    @RequestParam("password") String password,
+	                    @RequestParam(value = "code", required = false) String code) {
+		return null;
 	}
 }

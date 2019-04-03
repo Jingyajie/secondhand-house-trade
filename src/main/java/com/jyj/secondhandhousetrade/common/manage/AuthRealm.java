@@ -29,9 +29,18 @@ public class AuthRealm extends AuthorizingRealm {
 	@Autowired
 	private UserService userService;
 
-	// 授权
+	/**
+	 * Method Description: Created by whx
+	 * 〈授权〉
+	 *
+	 * @param principalCollection 法则
+	 * @return org.apache.shiro.authz.AuthorizationInfo
+	 * @throws
+	 * @date 04/03/2019 16:07
+	 */
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
+
 
 		User user = (User) principalCollection.fromRealm(this.getClass().getName()).iterator().next();
 		List<String> permissionList = new ArrayList<>();
@@ -52,7 +61,15 @@ public class AuthRealm extends AuthorizingRealm {
 		return info;
 	}
 
-	// 认证登录
+	/**
+	 * Method Description: Created by whx
+	 * 〈认证登录〉
+	 *
+	 * @param authenticationToken token
+	 * @return org.apache.shiro.authc.AuthenticationInfo
+	 * @throws
+	 * @date 04/03/2019 16:08
+	 */
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
 		UsernamePasswordToken token = (UsernamePasswordToken) authenticationToken;

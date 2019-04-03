@@ -11,4 +11,6 @@ import com.jyj.secondhandhousetrade.pojo.User;
  */
 public interface UserService {
 	User findByUsername(String username);
+
+	int register(User user);
 }
