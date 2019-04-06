@@ -1,16 +1,9 @@
 package com.jyj.secondhandhousetrade.service.impl;
 
-import com.jyj.secondhandhousetrade.mapper.DemoMapper;
+import com.github.pagehelper.PageInfo;
 import com.jyj.secondhandhousetrade.pojo.Demo;
 import com.jyj.secondhandhousetrade.service.DemoService;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @author Andy
@@ -21,33 +14,29 @@ import java.util.Map;
 @Service
 public class DemoServiceImpl implements DemoService {
 
-	@Autowired
-	private DemoMapper demoMapper;
 
 	@Override
 	public int create(Demo demo) {
-		return demoMapper.create(demo);
+		return 0;
 	}
 
 	@Override
 	public Demo readById(String id) {
-		return demoMapper.readById(id);
+		return null;
 	}
 
 	@Override
 	public int update(Demo demo) {
-		return demoMapper.update(demo);
+		return 0;
 	}
 
 	@Override
 	public int deleteById(String id) {
-		return demoMapper.deleteById(id);
+		return 0;
 	}
 
 	@Override
 	public PageInfo<Demo> list(Integer pageNum, Integer pageSize) {
-		PageHelper.startPage(pageNum, pageSize);
-		List<Demo> list = demoMapper.list();
-		return new PageInfo<Demo>(list);
+		return null;
 	}
 }

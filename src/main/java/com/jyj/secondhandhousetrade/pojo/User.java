@@ -1,9 +1,6 @@
 package com.jyj.secondhandhousetrade.pojo;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * @author jyj
@@ -13,7 +10,7 @@ import java.util.Set;
  */
 
 public class User {
-	private int id;
+	private int userId;
 	private String username;
 	private String password;
 	private String email;
@@ -22,23 +19,19 @@ public class User {
 	private String nickname;
 	private String headImg;
 	private int status;
-	private Set<Role> roles = new HashSet<>();
 	LocalDateTime insertTime;
 
 
 	public User() {
 	}
 
-	public Set<Role> getRoles() {
-		return roles;
+
+	public int getUserId() {
+		return userId;
 	}
 
-	public void setRoles(Set<Role> roles) {
-		this.roles = roles;
-	}
-
-	public User(int id) {
-		this.id = id;
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 
 	public User(String username) {
@@ -49,13 +42,6 @@ public class User {
 		this.insertTime = insertTime;
 	}
 
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
 
 	public String getUsername() {
 		return username;

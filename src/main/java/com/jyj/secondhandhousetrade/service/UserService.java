@@ -10,7 +10,7 @@ import com.jyj.secondhandhousetrade.pojo.User;
  * @date 04/03/2019 15:37
  */
 public interface UserService {
-	User findByUsername(String username);
+	User findByUsername(String username, String password);
 
-	int register(User user);
+	User register(User user);
 }

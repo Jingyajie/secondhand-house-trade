@@ -18,6 +18,7 @@ const vm = new Vue({
 	methods: {
 		register: function () {
 			let data = {};
+			let _this = this;
 			if (this.regPassword !== this.confirmRegPassword) {
 				alert("两次密码不同");
 			} else {
@@ -35,7 +36,15 @@ const vm = new Vue({
 				data: JSON.stringify(data),
 				contentType: "application/json",
 				success(data) {
-					console.log(data);
+					if (data instanceof Object) {
+						if (data.code > 0) {
+							location.href = "/index";
+							_this.loginLabel = data.data.username;
+							_this.logoutLabel = "退出";
+						} else {
+
+						}
+					}
 				},
 				error(xhr) {
 					console.log(xhr);
@@ -55,8 +64,15 @@ const vm = new Vue({
 				type: "post",
 				data: params,
 				success: function (data) {
+					if (data instanceof Object) {
+						if (data.code > 0) {
+							location.href = "/index"
+							_this.loginLabel = data.data.username;
+							_this.logoutLabel = "退出";
+						} else {
 
-					console.log(data);
+						}
+					}
 				},
 				error: function (xhr) {
 					console.error(xhr);
