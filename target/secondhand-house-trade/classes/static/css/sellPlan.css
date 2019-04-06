@@ -1,0 +1,32 @@
+.sellPlan-goal{
+    color: #c12e2a;
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+.sellPlan-goal1{
+    color: #c12e2a;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sellPlan-goal2{
+    color: #c12e2a;
+    text-align: right;
+}
+
+.sellPlan-row{
+    margin-top: 15px;
+}
+
+.sellPlan-row1{
+    margin-top: 8px;
+}
+
+.sellPlan-text{
+    color: #707070;
+    font-family: 幼圆;
+    font-size: x-large;
+    font-weight: bolder;
+}

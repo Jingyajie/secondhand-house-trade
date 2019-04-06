@@ -1,0 +1,39 @@
+.houseHome-text{
+    text-align: left;
+}
+
+.houseHome-text-row{
+    margin-top: 20px;
+}
+
+.houseHome-text-style{
+    font-size: medium;
+    font-family: 幼圆;
+    font-weight: bolder;
+}
+
+.houseHome-text-style1{
+    font-size: medium;
+    font-family: 幼圆;
+    color: #707070;
+}
+
+.houseHome-menu-style{
+    color: #707070;
+    font-size: large;
+}
+.houseHome-menu-row{
+    margin-top: 20px;
+}
+.houseHome-money-style{
+    text-align: right;
+    color: #c12e2a;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.houseHome-wan{
+    text-align: right;
+    color: #c9302c;
+    font-size: large;
+
+}
