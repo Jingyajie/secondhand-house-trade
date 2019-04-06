@@ -5,11 +5,13 @@ import com.jyj.secondhandhousetrade.pojo.Permission;
 import com.jyj.secondhandhousetrade.pojo.Role;
 import com.jyj.secondhandhousetrade.pojo.User;
 import com.jyj.secondhandhousetrade.service.UserService;
+import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.CollectionUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -40,7 +42,6 @@ public class AuthRealm extends AuthorizingRealm {
 	 */
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-
 
 		User user = (User) principalCollection.fromRealm(this.getClass().getName()).iterator().next();
 		List<String> permissionList = new ArrayList<>();

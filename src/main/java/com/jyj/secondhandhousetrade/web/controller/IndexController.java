@@ -1,14 +1,12 @@
 package com.jyj.secondhandhousetrade.web.controller;
 
+import com.jyj.secondhandhousetrade.common.ViewResult;
 import com.jyj.secondhandhousetrade.pojo.User;
 import com.jyj.secondhandhousetrade.service.UserService;
 import org.apache.ibatis.annotations.Arg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author Andy
@@ -74,10 +72,11 @@ public class IndexController {
 		return null;
 	}
 
-	@PostMapping(value = "login")
-	public String login(@RequestParam("account") String account,
-	                    @RequestParam("password") String password,
-	                    @RequestParam(value = "code", required = false) String code) {
-		return null;
+	@PostMapping(value = "/login")
+	@ResponseBody
+	public ViewResult login(@RequestParam("username") String username,
+	                        @RequestParam("password") String password,
+	                        @RequestParam(value = "code", required = false) String code) {
+		return ViewResult.instance();
 	}
 }
