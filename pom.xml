@@ -108,6 +108,12 @@
 			<artifactId>snakeyaml</artifactId>
 			<version>${snakeyaml.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-typehandlers-jsr310</artifactId>
+			<version>1.0.1</version>
+		</dependency>
 	</dependencies>
 
 

@@ -26,11 +26,6 @@ public class IndexController {
 		return "modules/demo/demo";
 	}
 
-	@GetMapping(value = "/index")
-	public String demo() {
-		return "modules/demo/index";
-	}
-
 	@GetMapping(value = "/houseHome")
 	public String house() {
 		return "modules/house/houseHome";
@@ -67,9 +62,16 @@ public class IndexController {
 	}
 
 	@PostMapping(value = "/register")
-	public String register(@RequestBody User user) {
-		userService.register(user);
-		return null;
+	@ResponseBody
+	public ViewResult register(@RequestBody User user) {
+		ViewResult vr = ViewResult.instance();
+		user = userService.register(user);
+		if (user != null) {
+			vr.setCode(1);
+			vr.setMsg("注册成功");
+			vr.setData(user);
+		}
+		return vr;
 	}
 
 	@PostMapping(value = "/login")
@@ -77,6 +79,13 @@ public class IndexController {
 	public ViewResult login(@RequestParam("username") String username,
 	                        @RequestParam("password") String password,
 	                        @RequestParam(value = "code", required = false) String code) {
-		return ViewResult.instance();
+		ViewResult vr = ViewResult.instance();
+		User user = userService.findByUsername(username, password);
+		if (user != null) {
+			vr.setData(user);
+			vr.setCode(1);
+			vr.setMsg("登录成功");
+		}
+		return vr;
 	}
 }
