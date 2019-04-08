@@ -16,25 +16,6 @@
 		        jdbcType="TIMESTAMP"></result>
 	</resultMap>
 
-	<resultMap id="agentMap" type="Agent">
-		<result property="userId" column="user_id" javaType="Integer" jdbcType="NUMERIC"></result>
-		<result property="userInfo" column="user_info" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="sellMotto" column="sell_motto" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="appraise" column="appraise" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="service" column="service" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="houseResource" column="house_resource" javaType="java.lang.String"
-		        jdbcType="VARCHAR"></result>
-		<result property="address" column="address" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="selled" column="selled" javaType="Integer" jdbcType="NUMERIC"></result>
-		<result property="lookHouse" column="look_house" javaType="Integer" jdbcType="NUMERIC"></result>
-		<result property="serviceYear" column="service_year" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="carrerInfo" column="carrer_info" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="license" column="license" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="company" column="company" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="insertTime" column="insert_time" javaType="java.time.LocalDateTime"
-		        jdbcType="TIMESTAMP"></result>
-	</resultMap>
-
 	<insert
 			id="insert"
 			parameterType="User"
