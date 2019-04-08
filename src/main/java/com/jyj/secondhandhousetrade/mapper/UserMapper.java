@@ -22,5 +22,6 @@ public interface UserMapper {
 
 	int insertAgent(@Param("agent") Agent agent);
 
+	User findByUsernameOnly(@Param("username") String username);
 
 }
