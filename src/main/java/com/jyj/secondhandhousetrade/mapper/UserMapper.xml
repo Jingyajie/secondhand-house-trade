@@ -70,7 +70,18 @@
 			fetchSize="256"
 			statementType="PREPARED"
 			resultSetType="FORWARD_ONLY">
-		SELECT * from t_demo WHERE username = #{username} and password = #{password}
+		SELECT * from t_user WHERE username = #{username} and password = #{password}
+	</select>
+	<select
+			id="findByUsernameOnly"
+			resultMap="userMap"
+			flushCache="false"
+			useCache="true"
+			timeout="10000"
+			fetchSize="256"
+			statementType="PREPARED"
+			resultSetType="FORWARD_ONLY">
+		SELECT * from t_user WHERE username = #{username}
 	</select>
 	<select id="list"
 	        resultMap="userMap"

@@ -13,4 +13,6 @@ public interface UserService {
 	User findByUsername(String username, String password);
 
 	User register(User user);
+
+	User getUserInfo(User user);
 }

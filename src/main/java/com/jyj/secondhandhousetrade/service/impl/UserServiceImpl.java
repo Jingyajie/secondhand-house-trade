@@ -50,4 +50,9 @@ public class UserServiceImpl implements UserService {
 		}
 		return userResult;
 	}
+
+	@Override
+	public User getUserInfo(User user) {
+		return userMapper.findByUsernameOnly(user.getUsername());
+	}
 }

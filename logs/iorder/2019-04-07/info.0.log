@@ -1,0 +1,107 @@
+[INFO ] 2019-04-07 17:38:10 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-SONOF2M with PID 9848 (E:\IdeaWorkspace\secondhand-house-trade\target\classes started by Andy in E:\IdeaWorkspace\secondhand-house-trade)
+[INFO ] 2019-04-07 17:38:10 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-04-07 17:38:10 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-04-07 17:38:10 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 17:38:10 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-04-07 17:38:10 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-04-07 17:38:10 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.2\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Go\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;D:\spring-boot-cli-1.5.10.RELEASE\bin;D:\gradle-4.5.1\bin;C:\Users\Andy\AppData\Local\Microsoft\WindowsApps;D:\Git\Git\cmd;D:\apache-cxf-3.2.5\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;;D:\VScode\Microsoft VS Code\bin;C:\Users\Andy\AppData\Local\Yarn\bin;C:\Users\Andy\AppData\Roaming\npm;D:\GoLand\GoLand 2019.1\bin;;C:\Users\Andy\go\bin;.]
+[INFO ] 2019-04-07 17:38:10 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-04-07 17:38:10 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 11779 ms
+[INFO ] 2019-04-07 17:38:10 [main] o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?)
+[INFO ] 2019-04-07 17:38:10 [main] o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?)
+[INFO ] 2019-04-07 17:38:10 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 17:38:10 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-04-07 17:38:10 [main] c.j.secondhandhousetrade.Application - Started Application in 22.174 seconds (JVM running for 28.75)
+[INFO ] 2019-04-07 17:38:10 [http-nio-10001-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-04-07 17:38:10 [http-nio-10001-exec-10] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-04-07 17:38:10 [http-nio-10001-exec-10] o.s.web.servlet.DispatcherServlet - Completed initialization in 24 ms
+[INFO ] 2019-04-07 17:38:10 [http-nio-10001-exec-1] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2019-04-07 18:12:33 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-SONOF2M with PID 6936 (E:\IdeaWorkspace\secondhand-house-trade\target\classes started by Andy in E:\IdeaWorkspace\secondhand-house-trade)
+[INFO ] 2019-04-07 18:12:33 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-04-07 18:12:33 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-04-07 18:12:33 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:12:33 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-04-07 18:12:33 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-04-07 18:12:33 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.2\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Go\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;D:\spring-boot-cli-1.5.10.RELEASE\bin;D:\gradle-4.5.1\bin;C:\Users\Andy\AppData\Local\Microsoft\WindowsApps;D:\Git\Git\cmd;D:\apache-cxf-3.2.5\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;;D:\VScode\Microsoft VS Code\bin;C:\Users\Andy\AppData\Local\Yarn\bin;C:\Users\Andy\AppData\Roaming\npm;D:\GoLand\GoLand 2019.1\bin;;C:\Users\Andy\go\bin;.]
+[INFO ] 2019-04-07 18:12:33 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-04-07 18:12:33 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 10462 ms
+[INFO ] 2019-04-07 18:12:33 [main] o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:12:33 [main] o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:12:33 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:12:33 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-04-07 18:12:33 [main] c.j.secondhandhousetrade.Application - Started Application in 21.506 seconds (JVM running for 24.825)
+[INFO ] 2019-04-07 18:12:33 [http-nio-10001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:12:33 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:12:33 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 29 ms
+[INFO ] 2019-04-07 18:12:33 [http-nio-10001-exec-10] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2019-04-07 18:19:53 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-SONOF2M with PID 15160 (E:\IdeaWorkspace\secondhand-house-trade\target\classes started by Andy in E:\IdeaWorkspace\secondhand-house-trade)
+[INFO ] 2019-04-07 18:19:53 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-04-07 18:19:53 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-04-07 18:19:53 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:19:53 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-04-07 18:19:53 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-04-07 18:19:53 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.2\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Go\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;D:\spring-boot-cli-1.5.10.RELEASE\bin;D:\gradle-4.5.1\bin;C:\Users\Andy\AppData\Local\Microsoft\WindowsApps;D:\Git\Git\cmd;D:\apache-cxf-3.2.5\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;;D:\VScode\Microsoft VS Code\bin;C:\Users\Andy\AppData\Local\Yarn\bin;C:\Users\Andy\AppData\Roaming\npm;D:\GoLand\GoLand 2019.1\bin;;C:\Users\Andy\go\bin;.]
+[INFO ] 2019-04-07 18:19:53 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-04-07 18:19:53 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8395 ms
+[INFO ] 2019-04-07 18:19:53 [main] o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:19:53 [main] o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:19:53 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:19:53 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-04-07 18:19:53 [main] c.j.secondhandhousetrade.Application - Started Application in 17.746 seconds (JVM running for 19.381)
+[INFO ] 2019-04-07 18:19:53 [http-nio-10001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:19:53 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:19:53 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+[INFO ] 2019-04-07 18:22:26 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-SONOF2M with PID 1040 (E:\IdeaWorkspace\secondhand-house-trade\target\classes started by Andy in E:\IdeaWorkspace\secondhand-house-trade)
+[INFO ] 2019-04-07 18:22:26 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-04-07 18:22:26 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-04-07 18:22:26 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:22:26 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-04-07 18:22:26 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-04-07 18:22:26 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.2\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Go\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;D:\spring-boot-cli-1.5.10.RELEASE\bin;D:\gradle-4.5.1\bin;C:\Users\Andy\AppData\Local\Microsoft\WindowsApps;D:\Git\Git\cmd;D:\apache-cxf-3.2.5\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;;D:\VScode\Microsoft VS Code\bin;C:\Users\Andy\AppData\Local\Yarn\bin;C:\Users\Andy\AppData\Roaming\npm;D:\GoLand\GoLand 2019.1\bin;;C:\Users\Andy\go\bin;.]
+[INFO ] 2019-04-07 18:22:26 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-04-07 18:22:26 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8614 ms
+[INFO ] 2019-04-07 18:22:26 [main] o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:22:26 [main] o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:22:26 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:22:26 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-04-07 18:22:26 [main] c.j.secondhandhousetrade.Application - Started Application in 18.083 seconds (JVM running for 19.726)
+[INFO ] 2019-04-07 18:22:26 [http-nio-10001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:22:26 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:22:26 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 23 ms
+[INFO ] 2019-04-07 18:22:26 [http-nio-10001-exec-4] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2019-04-07 18:31:13 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-SONOF2M with PID 6524 (E:\IdeaWorkspace\secondhand-house-trade\target\classes started by Andy in E:\IdeaWorkspace\secondhand-house-trade)
+[INFO ] 2019-04-07 18:31:13 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-04-07 18:31:13 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-04-07 18:31:13 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:31:13 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-04-07 18:31:13 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-04-07 18:31:13 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.2\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Go\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;D:\spring-boot-cli-1.5.10.RELEASE\bin;D:\gradle-4.5.1\bin;C:\Users\Andy\AppData\Local\Microsoft\WindowsApps;D:\Git\Git\cmd;D:\apache-cxf-3.2.5\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;;D:\VScode\Microsoft VS Code\bin;C:\Users\Andy\AppData\Local\Yarn\bin;C:\Users\Andy\AppData\Roaming\npm;D:\GoLand\GoLand 2019.1\bin;;C:\Users\Andy\go\bin;.]
+[INFO ] 2019-04-07 18:31:13 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-04-07 18:31:13 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8622 ms
+[INFO ] 2019-04-07 18:31:13 [main] o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:31:13 [main] o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:31:13 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:31:13 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-04-07 18:31:13 [main] c.j.secondhandhousetrade.Application - Started Application in 18.393 seconds (JVM running for 20.156)
+[INFO ] 2019-04-07 18:31:13 [http-nio-10001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:31:13 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:31:13 [http-nio-10001-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 26 ms
+[INFO ] 2019-04-07 18:31:13 [http-nio-10001-exec-4] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+[INFO ] 2019-04-07 18:47:11 [main] c.j.secondhandhousetrade.Application - Starting Application on DESKTOP-SONOF2M with PID 1396 (E:\IdeaWorkspace\secondhand-house-trade\target\classes started by Andy in E:\IdeaWorkspace\secondhand-house-trade)
+[INFO ] 2019-04-07 18:47:11 [main] c.j.secondhandhousetrade.Application - The following profiles are active: dev
+[INFO ] 2019-04-07 18:47:11 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 10001 (http)
+[INFO ] 2019-04-07 18:47:11 [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:47:11 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 2019-04-07 18:47:11 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[INFO ] 2019-04-07 18:47:11 [main] o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_151\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\apache-maven-3.5.2\bin;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\TortoiseSVN\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;C:\Go\bin;C:\Program Files\Java\jdk1.8.0_151\bin;C:\Program Files\Java\jdk1.8.0_151\jre\bin;D:\spring-boot-cli-1.5.10.RELEASE\bin;D:\gradle-4.5.1\bin;C:\Users\Andy\AppData\Local\Microsoft\WindowsApps;D:\Git\Git\cmd;D:\apache-cxf-3.2.5\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;;D:\VScode\Microsoft VS Code\bin;C:\Users\Andy\AppData\Local\Yarn\bin;C:\Users\Andy\AppData\Roaming\npm;D:\GoLand\GoLand 2019.1\bin;;C:\Users\Andy\go\bin;.]
+[INFO ] 2019-04-07 18:47:11 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 2019-04-07 18:47:11 [main] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6777 ms
+[INFO ] 2019-04-07 18:47:11 [main] o.s.b.web.servlet.RegistrationBean - Servlet statViewServlet was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:47:11 [main] o.s.b.web.servlet.RegistrationBean - Filter webStatFilter was not registered (possibly already registered?)
+[INFO ] 2019-04-07 18:47:11 [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-10001"]
+[INFO ] 2019-04-07 18:47:11 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 10001 (http) with context path ''
+[INFO ] 2019-04-07 18:47:11 [main] c.j.secondhandhousetrade.Application - Started Application in 14.195 seconds (JVM running for 15.582)
+[INFO ] 2019-04-07 18:47:11 [http-nio-10001-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:47:11 [http-nio-10001-exec-10] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2019-04-07 18:47:11 [http-nio-10001-exec-10] o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+[INFO ] 2019-04-07 18:47:11 [http-nio-10001-exec-6] c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
