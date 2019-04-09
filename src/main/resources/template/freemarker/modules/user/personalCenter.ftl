@@ -6,6 +6,7 @@
     <link href="/css/personalCenter.css" rel="stylesheet">
     <link href="/css/common.css" rel="stylesheet">
     <link href="/css/houseHome.css" rel="stylesheet">
+    <link href="/css/agent.css" rel="stylesheet">
     <script src="/lib/jquery-3.3.1.js"></script>
     <script src="/plugins/js/bootstrap.min.js"></script>
     <script src="/js/modules/user/personal-center.js"></script>
