@@ -1,0 +1,62 @@
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jyj.secondhandhousetrade.mapper.HouseImgMapper">
+	<resultMap id="houseImgMap" type="HouseImg">
+		<result property="id" column="id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="houseId" column="house_id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="houseImg" column="house_img" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+	</resultMap>
+
+	<insert
+			id="insert"
+			parameterType="HouseImg"
+			statementType="PREPARED"
+			useGeneratedKeys="true"
+			keyProperty="houseImg.id"
+	>
+		insert into t_house_img (house_id, house_img)
+		VALUES
+		(#{houseImg.houseId},#{houseImg.houseImg})
+	</insert>
+
+	<update
+			id="update"
+			parameterType="HouseImg"
+			flushCache="true"
+			statementType="PREPARED"
+			timeout="20">
+		UPDATE t_house_img SET house_id = #{houseImg.houseId}, house_img = #{houseImg.houseImg} WHERE id = #{houseImg.id}
+	</update>
+
+	<select
+			id="findById"
+			resultMap="houseImgMap"
+			flushCache="false"
+			useCache="true"
+			timeout="10000"
+			fetchSize="256"
+			statementType="PREPARED"
+			resultSetType="FORWARD_ONLY">
+		SELECT * from t_house_img WHERE id = #{id}
+	</select>
+
+	<select id="listHouseImg"
+			resultMap="houseImgMap"
+			flushCache="false"
+			useCache="true"
+			timeout="10000"
+			fetchSize="256"
+			statementType="PREPARED"
+			resultSetType="FORWARD_ONLY">
+		SELECT * FROM t_house_img
+	</select>
+
+	<delete
+			id="delete"
+			flushCache="true"
+			statementType="PREPARED"
+			timeout="20">
+		DELETE FROM t_house_img WHERE id = #{id}
+	</delete>
+</mapper>

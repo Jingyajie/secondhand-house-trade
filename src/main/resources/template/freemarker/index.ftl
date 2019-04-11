@@ -12,13 +12,19 @@
 </head>
 
 <body class="home-bg">
-<div class="index-container" id="app">
+<div class="index-container" id="app" v-cloak>
 	<div class="row index-login-out-row">
 		<div class="col-md-10"></div>
 		<div class="col-md-2 index-login-out-text">
 			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-			<a class="a-text" href="#" data-toggle="modal" data-target="#myModal">&nbsp;{{loginLabel}}</a>
-			<a class="a-text" href="#" data-toggle="modal" data-target="#myModal1">&nbsp;{{logoutLabel}}</a>
+			<div v-if="loginShow">
+				<a class="a-text" href="#" data-toggle="modal" data-target="#myModal">&nbsp;{{loginLabel}}</a>
+				<a class="a-text" href="#" data-toggle="modal" data-target="#myModal1">&nbsp;{{logoutLabel}}</a>
+			</div>
+			<div v-if="!loginShow">
+				<a class="a-text" href="/self-center" data-toggle="modal">&nbsp;{{loginLabel}}</a>
+				<a class="a-text" href="/exit" data-toggle="modal">&nbsp;{{logoutLabel}}</a>
+			</div>
 		</div>
 	</div>
 	<div class="row index-navbar-row">

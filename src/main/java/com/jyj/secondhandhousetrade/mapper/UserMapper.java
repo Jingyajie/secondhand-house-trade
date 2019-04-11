@@ -5,6 +5,8 @@ import com.jyj.secondhandhousetrade.pojo.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
 /**
  * description
  *
@@ -15,12 +17,19 @@ import org.apache.ibatis.annotations.Param;
 @Mapper
 public interface UserMapper {
 
-	User findByUsername(@Param("username") String username,
-	                    @Param("password") String password);
+    User findByUsername(@Param("username") String username,
+                        @Param("password") String password);
 
-	int insert(@Param("user") User user);
+    int insert(@Param("user") User user);
 
-	int insertAgent(@Param("agent") Agent agent);
+    int insertAgent(@Param("agent") Agent agent);
 
+    User findByUsernameOnly(@Param("username") String username);
+
+    List<User> listUser();
+
+    User update(@Param("user") User user);
+
+    int delete(@Param("id") int id);
 
 }

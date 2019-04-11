@@ -1,0 +1,65 @@
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jyj.secondhandhousetrade.mapper.HostHouseAgentMapper">
+	<resultMap id="hostHouseAgentMap" type="HostHouseAgent">
+		<result property="id" column="id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="houseId" column="house_id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="hostId" column="host_id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="agentId" column="agent_id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="houseState" column="house_state" javaType="Integer" jdbcType="NUMERIC"></result>
+	</resultMap>
+
+	<insert
+			id="insert"
+			parameterType="HostHouseAgent"
+			statementType="PREPARED"
+			useGeneratedKeys="true"
+			keyProperty="hostHouseAgentMap.id"
+	>
+		insert into t_host_house_agent (house_id, host_id, agent_id, house_state)
+		VALUES
+		(#{hostHouseAgentMap.houseId},#{hostHouseAgentMap.hostId},#{hostHouseAgentMap.agentId},#{hostHouseAgentMap.houseState})
+	</insert>
+
+	<update
+			id="update"
+			parameterType="HostHouseAgent"
+			flushCache="true"
+			statementType="PREPARED"
+			timeout="20">
+		UPDATE t_host_house_agent SET house_id = #{hostHouseAgentMap.houseId}, host_id = #{hostHouseAgentMap.hostId},
+		agent_id = #{hostHouseAgentMap.agentId}, house_state = #{hostHouseAgentMap.houseState} WHERE id = #{hostHouseAgent.id}
+	</update>
+
+	<select
+			id="findById"
+			resultMap="hostHouseAgentMap"
+			flushCache="false"
+			useCache="true"
+			timeout="10000"
+			fetchSize="256"
+			statementType="PREPARED"
+			resultSetType="FORWARD_ONLY">
+		SELECT * from t_host_house_agent WHERE id = #{id}
+	</select>
+
+	<select id="listHostHouseAgent"
+			resultMap="hostHouseAgentMap"
+			flushCache="false"
+			useCache="true"
+			timeout="10000"
+			fetchSize="256"
+			statementType="PREPARED"
+			resultSetType="FORWARD_ONLY">
+		SELECT * FROM t_host_house_agent
+	</select>
+
+	<delete
+			id="delete"
+			flushCache="true"
+			statementType="PREPARED"
+			timeout="20">
+		DELETE FROM t_host_house_agent WHERE id = #{id}
+	</delete>
+</mapper>

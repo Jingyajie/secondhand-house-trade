@@ -13,9 +13,33 @@ const vm = new Vue({
 		confirmRegPassword: "",
 		regUserType: "",
 		loginAccount: "",
-		loginPassword: ""
+		loginPassword: "",
+		loginShow: true
 	},
 	methods: {
+		askForSession: function () {
+			let _this = this;
+			$.ajax({
+				type: "get",
+				url: "/session",
+				success(data) {
+					if (data instanceof Object) {
+						if (data.code > 0) {
+							_this.loginLabel = data.data.username;
+							_this.logoutLabel = "退出";
+							_this.loginShow = false;
+						} else {
+							_this.loginLabel = data.data.username;
+							_this.logoutLabel = "立即注册";
+							_this.loginShow = true;
+						}
+					}
+				},
+				error(xhr) {
+					console.log(xhr);
+				}
+			})
+		},
 		register: function () {
 			let data = {};
 			let _this = this;
@@ -27,7 +51,6 @@ const vm = new Vue({
 					password: this.regPassword,
 					type: this.regUserType
 				}
-
 			}
 
 			$.ajax({
@@ -38,9 +61,8 @@ const vm = new Vue({
 				success(data) {
 					if (data instanceof Object) {
 						if (data.code > 0) {
-							location.href = "/index";
-							_this.loginLabel = data.data.username;
-							_this.logoutLabel = "退出";
+							$('#myModal1').modal('hide');
+							_this.askForSession();
 						} else {
 
 						}
@@ -66,9 +88,8 @@ const vm = new Vue({
 				success: function (data) {
 					if (data instanceof Object) {
 						if (data.code > 0) {
-							location.href = "/index"
-							_this.loginLabel = data.data.username;
-							_this.logoutLabel = "退出";
+							$('#myModal').modal('hide');
+							_this.askForSession();
 						} else {
 
 						}

@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpSession;
+
 /**
  * @author Andy
  * @version 1.0
@@ -73,7 +75,7 @@ public class IndexController {
 
 	@PostMapping(value = "/register")
 	@ResponseBody
-	public ViewResult register(@RequestBody User user) {
+	public ViewResult register(@RequestBody User user, HttpSession session) {
 		ViewResult vr = ViewResult.instance();
 		user = userService.register(user);
 		if (user != null) {
@@ -81,6 +83,7 @@ public class IndexController {
 			vr.setMsg("注册成功");
 			vr.setData(user);
 		}
+		session.setAttribute("vr", vr);
 		return vr;
 	}
 
@@ -88,7 +91,8 @@ public class IndexController {
 	@ResponseBody
 	public ViewResult login(@RequestParam("username") String username,
 	                        @RequestParam("password") String password,
-	                        @RequestParam(value = "code", required = false) String code) {
+	                        @RequestParam(value = "code", required = false) String code,
+	                        HttpSession session) {
 		ViewResult vr = ViewResult.instance();
 		User user = userService.findByUsername(username, password);
 		if (user != null) {
@@ -96,6 +100,24 @@ public class IndexController {
 			vr.setCode(1);
 			vr.setMsg("登录成功");
 		}
+		session.setAttribute("vr", vr);
 		return vr;
+	}
+
+	@GetMapping(value = "/session")
+	@ResponseBody
+	public ViewResult sessionValue(HttpSession session) {
+		return (ViewResult) session.getAttribute("vr");
+	}
+
+	@GetMapping("/exit")
+	public String exit(HttpSession session) {
+		session.removeAttribute("vr");
+		return "/index";
+	}
+
+	@GetMapping("/self-center")
+	public String selfCenter() {
+		return "modules/user/personalCenter";
 	}
 }

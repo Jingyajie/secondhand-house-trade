@@ -51,4 +51,21 @@ public class ViewResult<T> {
 	public void setData(T data) {
 		this.data = data;
 	}
+
+	public ViewResult<T> code(int code) {
+		this.code = code;
+		return this;
+	}
+
+	public ViewResult<T> msg(String msg) {
+		this.msg = msg;
+		return this;
+	}
+
+	public ViewResult<T> data(T data) {
+		this.data = data;
+		return this;
+	}
+
 }
+

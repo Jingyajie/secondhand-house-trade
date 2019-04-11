@@ -1,14 +1,16 @@
 package com.jyj.secondhandhousetrade.service.impl;
 
-import com.jyj.secondhandhousetrade.mapper.UserMapper;
 import com.jyj.secondhandhousetrade.pojo.Agent;
 import com.jyj.secondhandhousetrade.pojo.User;
 import com.jyj.secondhandhousetrade.service.UserService;
+import com.jyj.secondhandhousetrade.mapper.UserMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 /**
  * description:
@@ -49,5 +51,28 @@ public class UserServiceImpl implements UserService {
 			throw new RuntimeException("添加用户失败");
 		}
 		return userResult;
+	}
+
+	@Override
+	public User getUserInfo(User user) {
+		return userMapper.findByUsernameOnly(user.getUsername());
+	}
+
+	@Override
+	public List<User> listUser() {
+		userMapper.listUser();
+		return null;
+	}
+
+	@Override
+	public User update(User user) {
+		userMapper.update(user);
+		return null;
+	}
+
+	@Override
+	public int delete(int id) {
+		userMapper.delete(id);
+		return 0;
 	}
 }

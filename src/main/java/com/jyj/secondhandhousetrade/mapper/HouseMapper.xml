@@ -1,0 +1,93 @@
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jyj.secondhandhousetrade.mapper.HouseMapper">
+	<resultMap id="houseMap" type="House">
+		<result property="id" column="id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="cityCode" column="city_code" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="cityName" column="city_name" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="commuCode" column="commu_code" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="commuName" column="commu_name" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="building" column="building" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="unit" column="unit" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="floor" column="floor" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="doorplate" column="doorplate" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="arer" column="arer" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="price" column="price" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="room" column="room" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="hall" column="hall" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="toilet" column="toilet" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="type" column="type" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="decoration" column="decoration" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="face" column="face" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="travel" column="travel" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="commuInfo" column="commu_info" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="decorationDes" column="decoration_des" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="coreSelledPoint" column="core_selled_point" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="phone" column="phone" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="perPrice" column="per_price" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="countryName" column="country_name" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="countryCode" column="country_code" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="insertTime" column="insert_time" javaType="java.time.LocalDateTime"
+		        jdbcType="TIMESTAMP"></result>
+	</resultMap>
+
+	<insert
+			id="insert"
+			parameterType="House"
+			statementType="PREPARED"
+			useGeneratedKeys="true"
+			keyProperty="house.id"
+	>
+		insert into t_house (city_code, city_name, commu_code, commu_name, building, unit, floor, doorplate, arer,price,room,hall,
+		toilet,type,decoration,face,travel,commu_info,decoration_des,core_selled_point,phone,per_price,country_name,country_code,insert_time)
+		VALUES
+		(#{house.cityCode},#{house.cityName},#{house.commuCode},#{house.commuName},#{house.building},#{house.unit},#{house.floor},#{house.doorplate},
+		#{house.arer},#{house.price},#{house.room},#{house.hall},#{house.toilet},#{house.type},#{house.decoration},#{house.face},#{house.travel},#{house.commuInfo},
+		#{house.decorationDes},#{house.coreSelledPoint},,#{house.phone},,#{house.perPrice},#{house.countryName},#{house.countryCode},#{house.insertTime})
+	</insert>
+
+	<update
+			id="update"
+			parameterType="House"
+			flushCache="true"
+			statementType="PREPARED"
+			timeout="20">
+		UPDATE t_house SET city_code = #{house.cityCode},city_name = #{house.cityName},commu_code = #{house.commuCode},commu_name = #{house.commuName},building = #{house.building},
+		unit = #{house.unit},floor = #{house.floor},doorplate = #{house.doorplate},arer = #{house.arer},price = #{house.price},room = #{house.room},
+		hall = #{house.hall},toilet = #{house.toilet},type = #{house.type},decoration = #{house.decoration},face = #{house.face},travel = #{house.travel},
+		commu_info = #{house.commuInfo}, decoration_des = #{house.decorationDes}, core_selled_point = #{house.coreSelledPoint}, phone = #{house.phone},
+		per_price = #{house.perPrice},country_name = #{house.countryName},country_code = #{house.countryCode},insert_time = #{house.insertTime}, WHERE id = #{house.id}
+	</update>
+
+	<select
+			id="findById"
+			resultMap="houseMap"
+			flushCache="false"
+			useCache="true"
+			timeout="10000"
+			fetchSize="256"
+			statementType="PREPARED"
+			resultSetType="FORWARD_ONLY">
+		SELECT * from t_house WHERE id = #{id}
+	</select>
+
+	<select id="listHouse"
+			resultMap="houseMap"
+			flushCache="false"
+			useCache="true"
+			timeout="10000"
+			fetchSize="256"
+			statementType="PREPARED"
+			resultSetType="FORWARD_ONLY">
+		SELECT * FROM t_house
+	</select>
+
+	<delete
+			id="delete"
+			flushCache="true"
+			statementType="PREPARED"
+			timeout="20">
+		DELETE FROM t_house WHERE id = #{id}
+	</delete>
+</mapper>
