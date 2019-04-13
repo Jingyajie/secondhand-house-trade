@@ -35,23 +35,8 @@
                         </button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>登录<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">用户登录</a></li>
-                                <li><a href="#">经纪人登录</a></li>
-                                <li><a href="#">admin登录</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                注册<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">注册普通用户</a></li>
-                                <li><a href="#">注册经纪人</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal1">注册</a></li>
                         <p class="navbar-text"><span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;热线电话1010-9666&nbsp;&nbsp;</p>
                     </ul>
                 </div>
@@ -59,6 +44,8 @@
         </nav>
     </div>
 </div>
+<#include "../signup.ftl">
+<#include "../load.ftl">
 <div class="container">
     <div class="row houseDetail-row">
         <div class="col-md-7">

@@ -37,14 +37,13 @@
                         </button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">登录</a></li>
-                        <li><a href="#">注册</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal1">注册</a></li>
                         <p class="navbar-text"><span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;热线电话1010-9666&nbsp;&nbsp;</p>
                     </ul>
                 </div>
             </div>
         </nav>
-
         <hr class="featurette-divider">
         <div class="row houseHome-text-row">
             <div class="col-md-1 houseHome-text-style">区域</div>
@@ -99,6 +98,8 @@
         </footer>
     </div>
 </div>
+<#include "../signup.ftl">
+<#include "../load.ftl">
 </body>
 </html>
 

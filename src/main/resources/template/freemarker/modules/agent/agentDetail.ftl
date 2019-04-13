@@ -5,6 +5,7 @@
     <link href="/plugins/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/agentDetail.css" rel="stylesheet">
     <link href="/css/houseHome.css" rel="stylesheet">
+    <link href="/css/personalCenter.css" rel="stylesheet">
     <link href="/css/common.css" rel="stylesheet">
     <script src="/lib/jquery-3.3.1.js"></script>
     <script src="/plugins/js/bootstrap.min.js"></script>
@@ -37,7 +38,7 @@
                         </button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>登录</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
                         <li><a href="" data-toggle="modal" data-target="#myModal1">注册</a></li>
                         <p class="navbar-text"><span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;热线电话1010-9666&nbsp;&nbsp;</p>
                     </ul>
