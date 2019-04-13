@@ -40,5 +40,34 @@ public class HouseController {
 		return vr;
 	}
 
+	@PostMapping(value = "/house1")
+	public ViewResult insert() {
+		houseService.insert(null);
+		return ViewResult.instance().code(1).msg("成功").data(null);
+	}
+
+	@GetMapping(value = "/list")
+	public ViewResult list() {
+		houseService.listHouse();
+		return ViewResult.instance().code(1).msg("成功").data(null);
+	}
+
+	@GetMapping(value = "/house1")
+	public ViewResult findById() {
+		houseService.findById(0);
+		return ViewResult.instance().code(1).msg("成功").data(null);
+	}
+
+	@PutMapping(value = "/house1")
+	public ViewResult update() {
+		houseService.update(null);
+		return ViewResult.instance().code(1).msg("成功").data(null);
+	}
+
+	@DeleteMapping(value = "/house1")
+	public ViewResult delete() {
+		houseService.delete(0);
+		return ViewResult.instance().code(1).msg("成功").data(null);
+	}
 
 }

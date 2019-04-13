@@ -140,3 +140,20 @@
     font-family: 幼圆;
     margin-top: 5px;
 }
+
+.agentDetail-title{
+    color: #707070;
+    font-size: large;
+}
+
+.agentDetail-button{
+    text-align: right;
+}
+
+.agentDetail-complain{
+    text-align: left;
+}
+
+.agentDetail-modal-button{
+    text-align: center;
+}

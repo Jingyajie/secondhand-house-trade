@@ -28,6 +28,16 @@ public class IndexController {
 		return "modules/demo/demo";
 	}
 
+	@GetMapping(value = {"/agent"})
+	public String agent() {
+		return "modules/agent/agent";
+	}
+
+	@GetMapping(value = {"/manage"})
+	public String manage() {
+		return "modules/manage/manage";
+	}
+
 	@GetMapping(value = "/houseHome")
 	public String house() {
 		return "modules/house/houseHome";

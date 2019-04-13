@@ -1,0 +1,26 @@
+.agent-row{
+    margin-top: 100px;
+}
+
+.agent-goal{
+    text-align: right;
+    color: #c9302c;
+    font-size: medium;
+}
+
+.agent-goal-style{
+    text-align: right;
+    color: #c12e2a;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.agent-menu-row{
+    margin-top: 10px;
+}
+
+.agent-menu-style {
+    color: #707070;
+    font-size: medium;
+}
+

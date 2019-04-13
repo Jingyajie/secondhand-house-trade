@@ -26,4 +26,34 @@ public class HouseServiceImpl implements HouseService {
 	public List<House> listHouse(User user) {
 		return houseMapper.listHouse(user);
 	}
+
+	@Override
+	public List<House> listHouse() {
+		houseMapper.listHouse();
+		return null;
+	}
+
+	@Override
+	public House findById(int id) {
+		houseMapper.findById(id);
+		return null;
+	}
+
+	@Override
+	public House insert(House house) {
+		houseMapper.insert(house);
+		return null;
+	}
+
+	@Override
+	public House update(House house) {
+		houseMapper.update(house);
+		return null;
+	}
+
+	@Override
+	public int delete(int id) {
+		houseMapper.delete(id);
+		return 0;
+	}
 }

@@ -13,5 +13,16 @@ import java.util.List;
  * @date 04/08/2019 10:37
  */
 public interface HouseService {
+
 	List<House> listHouse(User user);
+
+	List<House> listHouse();
+
+	House findById(int id);
+
+	House insert(House house);
+
+	House update(House house);
+
+	int delete(int id);
 }

@@ -1,0 +1,81 @@
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jyj.secondhandhousetrade.mapper.AgentMapper">
+	<resultMap id="agentMap" type="Agent">
+		<result property="id" column="id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="userId" column="user_id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="userInfo" column="user_info" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="sellMotto" column="sell_motto" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="appraise" column="appraise" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="service" column="service" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="houseResource" column="houseResource" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="address" column="address" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="selled" column="selled" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="lookHouse" column="lookHouse" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="serviceYear" column="service_year" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="carrerInfo" column="carrer_info" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="license" column="license" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="company" column="company" javaType="java.lang.String" jdbcType="VARCHAR"></result>
+		<result property="insertTime" column="insert_time" javaType="java.time.LocalDateTime"
+		        jdbcType="TIMESTAMP"></result>
+	</resultMap>
+
+	<insert
+			id="insert"
+			parameterType="Agent"
+			statementType="PREPARED"
+			useGeneratedKeys="true"
+			keyProperty="agent.id"
+	>
+		insert into t_agent (user_id, user_info, sell_motto, appraise, service, house_resource, address, selled, look_house,
+		service_year, carrer_info, license, company,insert_time)
+		VALUES
+		(#{agent.userId},#{agent.userInfo},#{agent.sellMotto},#{agent.appraise},#{agent.service},#{agent.houseResource},#{agent.address},
+		#{agent.selled},#{agent.lookHouse},#{agent.serviceYear},#{agent.carrerInfo},#{agent.license},#{agent.company},#{agent.insertTime})
+	</insert>
+
+	<update
+			id="update"
+			parameterType="Agent"
+			flushCache="true"
+			statementType="PREPARED"
+			timeout="20">
+		UPDATE t_agent SET user_id = #{agent.userId}, user_info = #{agent.userInfo}, sell_motto = #{agent.sellMotto}, appraise = #{agent.appraise},
+		service = #{agent.service}, house_resource = #{agent.houseResource}, address = #{agent.address}, selled = #{agent.selled}, look_house = #{agent.lookHouse},
+		service_year = #{agent.serviceYear}, carrer_info = #{agent.carrerInfo}, license = #{agent.license}, company = #{agent.company},
+		insert_time = #{agent.insertTime} WHERE id = #{agent.id}
+	</update>
+
+	<select
+			id="findById"
+			resultMap="agentMap"
+			flushCache="false"
+			useCache="true"
+			timeout="10000"
+			fetchSize="256"
+			statementType="PREPARED"
+			resultSetType="FORWARD_ONLY">
+		SELECT * from t_agent WHERE id = #{id}
+	</select>
+
+	<select id="listAgent"
+			resultMap="agentMap"
+			flushCache="false"
+			useCache="true"
+			timeout="10000"
+			fetchSize="256"
+			statementType="PREPARED"
+			resultSetType="FORWARD_ONLY">
+		SELECT * FROM t_agent
+	</select>
+
+	<delete
+			id="delete"
+			flushCache="true"
+			statementType="PREPARED"
+			timeout="20">
+		DELETE FROM t_agent WHERE id = #{id}
+	</delete>
+
+</mapper>
