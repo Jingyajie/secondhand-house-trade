@@ -37,7 +37,7 @@
 			<div class="row">
 				<div class="col-md-4 index-navbar-text"><a href="#" class="index-navbar">二手房</a></div>
 				<div class="col-md-4 index-navbar-text"><a href="#" class="index-navbar">经纪人</a></div>
-				<div class="col-md-4 index-navbar-text"><a href="#" class="index-navbar">发布房源</a></div>
+				<div class="col-md-4 index-navbar-text"><a href="/sell-house" class="index-navbar">发布房源</a></div>
 			</div>
 		</div>
 	</div>

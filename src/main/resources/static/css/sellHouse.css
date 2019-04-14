@@ -1,64 +1,75 @@
-.sellHouse-text-row{
-    margin-top: 100px;
+.sellHouse-text-row {
+	margin-top: 100px;
 }
 
-.sellHouse-text-row1{
-    margin-top: 10px;
+.sellHouse-text-row1 {
+	margin-top: 10px;
 }
 
-.sellHouse-input-row{
-    margin-top: 50px;
-}
-.sellHouse-input-row1{
-    margin-top: 30px;
+.sellHouse-input-row {
+	margin-top: 50px;
 }
 
-.sellHouse-foot-row{
-    margin-top: 100px;
+.sellHouse-input-row1 {
+	margin-top: 30px;
 }
 
-.sellHouse-hr{
-    margin-top: 150px;
-    text-align: center;
+.sellHouse-foot-row {
+	margin-top: 100px;
 }
 
-.sellHouse-foot-text{
-    text-align: center;
+.sellHouse-hr {
+	margin-top: 150px;
+	text-align: center;
 }
 
-.sellHouse-boarder{
-    background: #ffffff;
-    width: 750px;
-    height: 1630px;
-    padding-top: 50px;
+.sellHouse-foot-text {
+	text-align: center;
 }
 
-.sellHouse-title{
-    color: #707070;
-    font-size: medium;
+.sellHouse-boarder {
+	background: #ffffff;
+	width: 750px;
+	height: 1630px;
+	padding-top: 50px;
 }
 
-.sellHouse-mark{
-    color: #c9302c;
-    font-size: medium;
+.sellHouse-title {
+	color: #707070;
+	font-size: medium;
 }
 
-.sellHouse-text-style{
-    text-align: center;
-    font-size: 50px;
-    font-weight: bolder;
-    font-family: 幼圆;
-    color: #ffffff;
+.sellHouse-mark {
+	color: #c9302c;
+	font-size: medium;
 }
 
-.sellHouse-text-style1{
-    text-align: center;
-    font-size: large;
-    font-weight: bold;
-    font-family: 幼圆;
-    color: #ffffff;
+.sellHouse-text-style {
+	text-align: center;
+	font-size: 50px;
+	font-weight: bolder;
+	font-family: 幼圆;
+	color: #ffffff;
 }
 
-.sellHouse-button{
-    text-align: right;
+.sellHouse-text-style1 {
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+	font-family: 幼圆;
+	color: #ffffff;
+}
+
+.sellHouse-button {
+	text-align: right;
+}
+
+.sellHouse-mark-input {
+	display: inline-flex;
+	width: 120px;
+}
+
+.sellHouse-mark-label {
+	display: inline-flex;
+	width: 50px;
 }
