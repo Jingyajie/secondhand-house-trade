@@ -10,4 +10,17 @@
 		<result property="rname" column="rname" javaType="java.lang.String" jdbcType="VARCHAR"></result>
 	</resultMap>
 
+	<select
+			id="getArea"
+			resultMap="chineseRegionMap"
+	>
+		SELECT * FROM t_chinese_region
+	</select>
+
+	<select id="getCities"
+	        resultMap="chineseRegionMap"
+	>
+		SELECT * FROM t_chinese_region WHERE pname = #{pname}
+	</select>
+
 </mapper>

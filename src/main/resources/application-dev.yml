@@ -3,9 +3,9 @@ server:
 master:
   datasource:
     druid:
-      url: jdbc:mysql://localhost:3306/db_second_hand_house?useUnicode=TRUE&characterEncoding=utf-8&useSSL=FALSE&serverTimezone=GMT%2B8
+      url: jdbc:mysql://localhost:3306/db_common_springboot?useUnicode=TRUE&characterEncoding=utf-8&useSSL=FALSE&serverTimezone=GMT%2B8
       username: root
-      password: jyj19960829
+      password: root
       driverClassName: com.mysql.cj.jdbc.Driver
       #max-active: 10
       #initial-size: 10

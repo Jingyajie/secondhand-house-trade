@@ -41,8 +41,8 @@ public class HouseServiceImpl implements HouseService {
 
 	@Override
 	public House insert(House house) {
-		houseMapper.insert(house);
-		return null;
+		house.setId(houseMapper.insert(house));
+		return house;
 	}
 
 	@Override

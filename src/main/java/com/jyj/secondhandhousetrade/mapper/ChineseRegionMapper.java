@@ -17,5 +17,7 @@ import java.util.List;
 @Mapper
 public interface ChineseRegionMapper {
 
-    int insert(@Param("chineseRegion") ChineseRegion chineseRegion);
+	List<ChineseRegion> getArea();
+
+	List<ChineseRegion> getCities();
 }

@@ -2,6 +2,7 @@ package com.jyj.secondhandhousetrade.web.controller;
 
 import com.jyj.secondhandhousetrade.common.ViewResult;
 import com.jyj.secondhandhousetrade.pojo.User;
+import com.jyj.secondhandhousetrade.service.CommonService;
 import com.jyj.secondhandhousetrade.service.UserService;
 import org.apache.ibatis.annotations.Arg;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,9 @@ public class IndexController {
 	@Autowired
 	private UserService userService;
 
+	@Autowired
+	private CommonService commonService;
+
 	@GetMapping(value = {"/demo"})
 	public String index() {
 		return "modules/demo/demo";
@@ -43,7 +47,7 @@ public class IndexController {
 		return "modules/house/houseHome";
 	}
 
-	@GetMapping(value = "/sellHouse")
+	@GetMapping(value = "/sell-house")
 	public String sellHouse() {
 		return "modules/house/sellHouse";
 	}
@@ -119,5 +123,14 @@ public class IndexController {
 	@GetMapping("/self-center")
 	public String selfCenter() {
 		return "modules/user/personalCenter";
+	}
+
+
+	@GetMapping("/area")
+	@ResponseBody
+	public ViewResult getArea() {
+		ViewResult vr = ViewResult.instance();
+
+		return vr.code(1).msg("成功").data(commonService.getArea());
 	}
 }

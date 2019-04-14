@@ -25,6 +25,7 @@ public class HouseController {
 	@PostMapping(value = "/house")
 	public ViewResult addHouse(@RequestBody House house, HttpSession session) {
 		ViewResult vr = ViewResult.instance();
+		vr.code(1).data(houseService.insert(house)).msg("添加成功");
 		return vr;
 	}
 
