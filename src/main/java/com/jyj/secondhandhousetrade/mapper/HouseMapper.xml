@@ -12,7 +12,7 @@
 		<result property="unit" column="unit" javaType="java.lang.String" jdbcType="VARCHAR"></result>
 		<result property="floor" column="floor" javaType="java.lang.String" jdbcType="VARCHAR"></result>
 		<result property="doorplate" column="doorplate" javaType="java.lang.String" jdbcType="VARCHAR"></result>
-		<result property="arer" column="arer" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="arer" column="area" javaType="Integer" jdbcType="NUMERIC"></result>
 		<result property="price" column="price" javaType="Integer" jdbcType="NUMERIC"></result>
 		<result property="room" column="room" javaType="Integer" jdbcType="NUMERIC"></result>
 		<result property="hall" column="hall" javaType="Integer" jdbcType="NUMERIC"></result>
