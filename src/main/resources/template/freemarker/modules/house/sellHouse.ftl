@@ -104,19 +104,19 @@
 										楼栋<span class="sellHouse-mark">*</span>
 									</label>
 									<div class="col-sm-2">
-										<input type="floor1" class="form-control" id="inputFloor" placeholder="">
+                                        <el-input size="small" v-model="building" placeholder="请输入内容"></el-input>
 									</div>
 									<div class="col-sm-1 ">
 										<label class="control-label sellHouse-title">栋</label>
 									</div>
 									<div class="col-sm-2">
-										<input type="floor2" class="form-control" id="inputFloor" placeholder="">
+                                        <el-input size="small" v-model="unit" placeholder="请输入内容"></el-input>
 									</div>
 									<div class="col-sm-1">
 										<span class="sellHouse-mark">单元</span>
 									</div>
 									<div class="col-sm-2">
-										<input type="floor3" class="form-control" id="inputFloor" placeholder="">
+                                        <el-input size="small" v-model="doorplate" placeholder="请输入内容"></el-input>
 									</div>
 									<div class="col-sm-1">
 										<span class="sellHouse-mark">门牌</span>
@@ -127,7 +127,7 @@
 										面积<span class="sellHouse-mark">*</span>
 									</label>
 									<div class="col-sm-5">
-										<input type="area" class="form-control" id="inputArea" placeholder="Email">
+                                        <el-input size="small" v-model="arer" placeholder="请输入内容"></el-input>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -135,7 +135,7 @@
 										售价<span class="sellHouse-mark">*</span>
 									</label>
 									<div class="col-sm-5">
-										<input type="money" class="form-control" id="inputMoney" placeholder="Email">
+                                        <el-input size="small" v-model="price" placeholder="请输入内容"></el-input>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -143,19 +143,19 @@
 										户型<span class="sellHouse-mark">*</span>
 									</label>
 									<div class="col-sm-2">
-										<input type="floor1" class="form-control" id="inputFloor" placeholder="">
+                                        <el-input size="small" v-model="room" placeholder="请输入内容"></el-input>
 									</div>
 									<div class="col-sm-1 ">
 										<label class="control-label sellHouse-title">室</label>
 									</div>
 									<div class="col-sm-2">
-										<input type="floor2" class="form-control" id="inputFloor" placeholder="">
+                                        <el-input size="small" v-model="hall" placeholder="请输入内容"></el-input>
 									</div>
 									<div class="col-sm-1">
 										<span class="sellHouse-mark">厅</span>
 									</div>
 									<div class="col-sm-2">
-										<input type="floor3" class="form-control" id="inputFloor" placeholder="">
+                                        <el-input size="small" v-model="toilet" placeholder="请输入内容"></el-input>
 									</div>
 									<div class="col-sm-1">
 										<span class="sellHouse-mark">卫</span>
@@ -165,36 +165,30 @@
 									<label for="inputType" class="col-sm-3 control-label sellHouse-title">
 										类型<span class="sellHouse-mark">*</span>
 									</label>
-									<el-select v-model="type" size="small" placeholder="请选择">
-										<el-option
-												v-for="item in typeOptions"
-												:key="item.value"
-												:label="item.label"
-												:value="item.value">
-										</el-option>
-									</el-select>
+                                    <div class="col-sm-9">
+										<el-select v-model="type" size="small" placeholder="请选择">
+											<el-option
+													v-for="item in typeOptions"
+													:key="item.value"
+													:label="item.label"
+													:value="item.value">
+											</el-option>
+										</el-select>
+                                    </div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
 									<label for="inputFurnish" class="col-sm-3 control-label sellHouse-title">
 										装修
 									</label>
 									<div class="col-sm-9">
-										<div class="dropdown">
-											<button type="furnish" id="inputFurnish"
-											        class="btn btn-default dropdown-toggle"
-											        type="button" id="dropdownMenu1" data-toggle="dropdown"
-											        aria-haspopup="true" aria-expanded="true">
-												Dropdown
-												<span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-												<li><a href="#">Action</a></li>
-												<li><a href="#">Another action</a></li>
-												<li><a href="#">Something else here</a></li>
-												<li role="separator" class="divider"></li>
-												<li><a href="#">Separated link</a></li>
-											</ul>
-										</div>
+                                        <el-select v-model="decoration" size="small" placeholder="请选择">
+                                            <el-option
+                                                    v-for="item in decorationOptions"
+                                                    :key="item.value"
+                                                    :label="item.label"
+                                                    :value="item.value">
+                                            </el-option>
+                                        </el-select>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -202,22 +196,14 @@
 										朝向
 									</label>
 									<div class="col-sm-9">
-										<div class="dropdown">
-											<button type="orientation" id="inputOrientation"
-											        class="btn btn-default dropdown-toggle" type="button"
-											        id="dropdownMenu1"
-											        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-												Dropdown
-												<span class="caret"></span>
-											</button>
-											<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-												<li><a href="#">Action</a></li>
-												<li><a href="#">Another action</a></li>
-												<li><a href="#">Something else here</a></li>
-												<li role="separator" class="divider"></li>
-												<li><a href="#">Separated link</a></li>
-											</ul>
-										</div>
+                                        <el-select v-model="face" size="small" placeholder="请选择">
+                                            <el-option
+                                                    v-for="item in faceOptions"
+                                                    :key="item.value"
+                                                    :label="item.label"
+                                                    :value="item.value">
+                                            </el-option>
+                                        </el-select>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -225,9 +211,12 @@
 										交通出行
 									</label>
 									<div class="col-sm-9">
-										<textarea type="traffic" id="inputTraffic" class="form-control"
-										          rows="5"></textarea>
-                                    <#--<input type="traffic" class="form-control" id="inputTraffic" placeholder="">-->
+                                        <el-input
+                                                type="textarea"
+                                                :rows="5"
+                                                placeholder="请输入内容"
+                                                v-model="travel">
+                                        </el-input>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -235,8 +224,12 @@
 										小区介绍
 									</label>
 									<div class="col-sm-9">
-									<textarea type="introduction" id="inputIntroduction" class="form-control"
-									          rows="5"></textarea>
+                                        <el-input
+                                                type="textarea"
+                                                :rows="5"
+                                                placeholder="请输入内容"
+                                                v-model="commuInfo">
+                                        </el-input>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -245,8 +238,12 @@
 										装修描述
 									</label>
 									<div class="col-sm-9">
-									<textarea type="decorateDescription" id="inputDecorateDescription"
-									          class="form-control" rows="5"></textarea>
+                                        <el-input
+                                                type="textarea"
+                                                :rows="5"
+                                                placeholder="请输入内容"
+                                                v-model="decorationDes">
+                                        </el-input>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -254,9 +251,12 @@
 										核心卖点
 									</label>
 									<div class="col-sm-9">
-									<textarea type="sellPoint" id="inputSellPoint" class="form-control"
-									          rows="5"></textarea>
-                                    <#--<input type="traffic" class="form-control" id="inputTraffic" placeholder="">-->
+                                        <el-input
+                                                type="textarea"
+                                                :rows="5"
+                                                placeholder="请输入内容"
+                                                v-model="coreSelledPoint">
+                                        </el-input>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -275,18 +275,10 @@
 							<form class="form-horizontal">
 								<div class="form-group sellHouse-input-row1">
 									<label for="inputHouseNme" class="col-sm-3 control-label sellHouse-title">
-										称呼<span class="sellHouse-mark">*</span>
-									</label>
-									<div class="col-sm-9">
-										<input type="house" class="form-control" id="inputHouseNme" placeholder="">
-									</div>
-								</div>
-								<div class="form-group sellHouse-input-row1">
-									<label for="inputHouseNme" class="col-sm-3 control-label sellHouse-title">
 										手机号码<span class="sellHouse-mark">*</span>
 									</label>
 									<div class="col-sm-9">
-										<input type="house" class="form-control" id="inputHouseNme" placeholder="">
+                                        <el-input size="small" v-model="phone" placeholder="请输入内容"></el-input>
 									</div>
 								</div>
 							</form>

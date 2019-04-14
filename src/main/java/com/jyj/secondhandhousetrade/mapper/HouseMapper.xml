@@ -39,12 +39,12 @@
 			useGeneratedKeys="true"
 			keyProperty="house.id"
 	>
-		insert into t_house (city_code, city_name, commu_code, commu_name, building, unit, floor, doorplate, arer,price,room,hall,
+		insert into t_house (city_code, city_name, commu_code, commu_name, building, unit, floor, doorplate, area,price,room,hall,
 		toilet,type,decoration,face,travel,commu_info,decoration_des,core_selled_point,phone,per_price,country_name,country_code,insert_time)
 		VALUES
 		(#{house.cityCode},#{house.cityName},#{house.commuCode},#{house.commuName},#{house.building},#{house.unit},#{house.floor},#{house.doorplate},
 		#{house.arer},#{house.price},#{house.room},#{house.hall},#{house.toilet},#{house.type},#{house.decoration},#{house.face},#{house.travel},#{house.commuInfo},
-		#{house.decorationDes},#{house.coreSelledPoint},,#{house.phone},,#{house.perPrice},#{house.countryName},#{house.countryCode},#{house.insertTime})
+		#{house.decorationDes},#{house.coreSelledPoint},#{house.phone},#{house.perPrice},#{house.countryName},#{house.countryCode},#{house.insertTime})
 	</insert>
 
 	<update

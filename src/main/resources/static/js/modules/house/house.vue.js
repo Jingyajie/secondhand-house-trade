@@ -36,21 +36,56 @@ var vm = new Vue({
 		regionOptions: [],
 		options: [],
 		typeOptions: [{
-			value: '选项1',
-			label: '黄金糕'
+			value: '全部',
+			label: '全部'
 		}, {
-			value: '选项2',
-			label: '双皮奶'
+			value: '公寓',
+			label: '公寓'
 		}, {
-			value: '选项3',
-			label: '蚵仔煎'
+			value: '别墅',
+			label: '别墅'
 		}, {
-			value: '选项4',
-			label: '龙须面'
+			value: '平房',
+			label: '平房'
 		}, {
-			value: '选项5',
-			label: '北京烤鸭'
-		}],
+			value: '普通住宅',
+			label: '普通住宅'
+		}, {
+            value: '其他',
+            label: '其他'
+        }],
+        decorationOptions: [{
+            value: '全部',
+            label: '全部'
+        }, {
+            value: '毛坯',
+            label: '毛坯'
+        }, {
+            value: '普通装修',
+            label: '普通装修'
+        }, {
+            value: '精装修',
+            label: '精装修'
+        }, {
+            value: '豪华装修',
+            label: '豪华装修'
+        }],
+        faceOptions: [{
+            value: '全部',
+            label: '全部'
+        }, {
+            value: '东',
+            label: '东'
+        }, {
+            value: '南',
+            label: '南'
+        }, {
+            value: '西',
+            label: '西'
+        }, {
+            value: '北',
+            label: '北'
+        }],
 		province: '',
 		cityId: '',
 		region: ''
@@ -138,12 +173,29 @@ var vm = new Vue({
 		},
 		submit() {
 			let params = {
-				commuName: this.commuName
+				commuName: this.commuName,
+                building: this.building,
+                unit: this.unit,
+                doorplate: this.doorplate,
+                arer: this.arer,
+                price: this.price,
+                room: this.room,
+                hall: this.hall,
+                toilet: this.toilet,
+                type: this.type,
+                decoration: this.decoration,
+                face: this.face,
+                travel: this.travel,
+                commuInfo: this.commuInfo,
+                decorationDes: this.decorationDes,
+                coreSelledPoint: this.coreSelledPoint,
+                phone: this.phone,
 			}
+			let _this = this;
 			axios.post('/houses/house', params)
 				.then(function (response) {
 					if (response.data.code > 0) {
-						this.$message({
+						_this.$message({
 							message: '发布成功',
 							type: 'success'
 						});
