@@ -7,6 +7,7 @@ var vm = new Vue({
 	el: "#app",
 	data: {
 		id: "",
+        provinceName: "",
 		cityCode: "",
 		cityName: "",
 		commuCode: "",
@@ -36,9 +37,6 @@ var vm = new Vue({
 		regionOptions: [],
 		options: [],
 		typeOptions: [{
-			value: '全部',
-			label: '全部'
-		}, {
 			value: '公寓',
 			label: '公寓'
 		}, {
@@ -55,9 +53,6 @@ var vm = new Vue({
             label: '其他'
         }],
         decorationOptions: [{
-            value: '全部',
-            label: '全部'
-        }, {
             value: '毛坯',
             label: '毛坯'
         }, {
@@ -71,9 +66,6 @@ var vm = new Vue({
             label: '豪华装修'
         }],
         faceOptions: [{
-            value: '全部',
-            label: '全部'
-        }, {
             value: '东',
             label: '东'
         }, {
@@ -174,6 +166,7 @@ var vm = new Vue({
 		submit() {
 			let params = {
 				commuName: this.commuName,
+                provinceName:this.provinceName,
                 building: this.building,
                 unit: this.unit,
                 doorplate: this.doorplate,

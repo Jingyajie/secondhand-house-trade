@@ -4,6 +4,7 @@
 <mapper namespace="com.jyj.secondhandhousetrade.mapper.HouseMapper">
 	<resultMap id="houseMap" type="House">
 		<result property="id" column="id" javaType="Integer" jdbcType="NUMERIC"></result>
+		<result property="provinceName" column="province_name" javaType="java.lang.String" jdbcType="VARCHAR"></result>
 		<result property="cityCode" column="city_code" javaType="Integer" jdbcType="NUMERIC"></result>
 		<result property="cityName" column="city_name" javaType="java.lang.String" jdbcType="VARCHAR"></result>
 		<result property="commuCode" column="commu_code" javaType="Integer" jdbcType="NUMERIC"></result>
@@ -39,10 +40,10 @@
 			useGeneratedKeys="true"
 			keyProperty="house.id"
 	>
-		insert into t_house (city_code, city_name, commu_code, commu_name, building, unit, floor, doorplate, area,price,room,hall,
+		insert into t_house (province_name,city_code, city_name, commu_code, commu_name, building, unit, floor, doorplate, area,price,room,hall,
 		toilet,type,decoration,face,travel,commu_info,decoration_des,core_selled_point,phone,per_price,country_name,country_code,insert_time)
 		VALUES
-		(#{house.cityCode},#{house.cityName},#{house.commuCode},#{house.commuName},#{house.building},#{house.unit},#{house.floor},#{house.doorplate},
+		(#{house.provinceName},#{house.cityCode},#{house.cityName},#{house.commuCode},#{house.commuName},#{house.building},#{house.unit},#{house.floor},#{house.doorplate},
 		#{house.arer},#{house.price},#{house.room},#{house.hall},#{house.toilet},#{house.type},#{house.decoration},#{house.face},#{house.travel},#{house.commuInfo},
 		#{house.decorationDes},#{house.coreSelledPoint},#{house.phone},#{house.perPrice},#{house.countryName},#{house.countryCode},#{house.insertTime})
 	</insert>
@@ -53,7 +54,7 @@
 			flushCache="true"
 			statementType="PREPARED"
 			timeout="20">
-		UPDATE t_house SET city_code = #{house.cityCode},city_name = #{house.cityName},commu_code = #{house.commuCode},commu_name = #{house.commuName},building = #{house.building},
+		UPDATE t_house SET province_name = #{house.provinceName},city_code = #{house.cityCode},city_name = #{house.cityName},commu_code = #{house.commuCode},commu_name = #{house.commuName},building = #{house.building},
 		unit = #{house.unit},floor = #{house.floor},doorplate = #{house.doorplate},arer = #{house.arer},price = #{house.price},room = #{house.room},
 		hall = #{house.hall},toilet = #{house.toilet},type = #{house.type},decoration = #{house.decoration},face = #{house.face},travel = #{house.travel},
 		commu_info = #{house.commuInfo}, decoration_des = #{house.decorationDes}, core_selled_point = #{house.coreSelledPoint}, phone = #{house.phone},

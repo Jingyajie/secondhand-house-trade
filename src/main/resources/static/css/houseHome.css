@@ -36,3 +36,8 @@
     color: #c9302c;
     font-size: large;
 }
+
+.houseHome-input-row{
+    margin-top: -5px;
+    text-align: right;
+}
