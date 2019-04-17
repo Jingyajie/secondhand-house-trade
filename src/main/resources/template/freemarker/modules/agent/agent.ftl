@@ -23,10 +23,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="">首页</a></li>
-                        <li class="active"><a href="#">二手房</a></li>
-                        <li><a href="">经纪人</a></li>
-                        <li><a href="">发布房源</a></li>
+                        <li><a href="/index">首页</a></li>
+                        <li><a href="/house_home">二手房</a></li>
+                        <li class="active" ><a href="">经纪人</a></li>
+                        <li><a href="/sell-house">发布房源</a></li>
                     </ul>
                     <form class="navbar-form navbar-left">
                         <div class="form-group">

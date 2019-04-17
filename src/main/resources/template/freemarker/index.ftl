@@ -16,7 +16,6 @@
 	<div class="row index-login-out-row">
 		<div class="col-md-10"></div>
 		<div class="col-md-2 index-login-out-text">
-			<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
 			<div v-if="loginShow">
 				<a class="a-text" href="#" data-toggle="modal" data-target="#myModal">&nbsp;{{loginLabel}}</a>
 				<a class="a-text" href="#" data-toggle="modal" data-target="#myModal1">&nbsp;{{logoutLabel}}</a>
@@ -35,8 +34,8 @@
 		<div class="col-md-4"></div>
 		<div class="col-md-3">
 			<div class="row">
-				<div class="col-md-4 index-navbar-text"><a href="#" class="index-navbar">二手房</a></div>
-				<div class="col-md-4 index-navbar-text"><a href="#" class="index-navbar">经纪人</a></div>
+				<div class="col-md-4 index-navbar-text"><a href="/house_home" class="index-navbar">二手房</a></div>
+				<div class="col-md-4 index-navbar-text"><a href="/agent" class="index-navbar">经纪人</a></div>
 				<div class="col-md-4 index-navbar-text"><a href="/sell-house" class="index-navbar">发布房源</a></div>
 			</div>
 		</div>
@@ -58,28 +57,6 @@
 <#include "modules/signup.ftl">
 <#include "modules/load.ftl">
 </div>
-
-<#--<div class="row">-->
-<#--<div class="col-lg-4">-->
-<#--<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">-->
-<#--<h2>Heading</h2>-->
-<#--<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>-->
-<#--<p><a class="btn btn-default" href="#" role="button">View details »</a></p>-->
-<#--</div><!-- /.col-lg-4 &ndash;&gt;-->
-<#--<div class="col-lg-4">-->
-<#--<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">-->
-<#--<h2>Heading</h2>-->
-<#--<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>-->
-<#--<p><a class="btn btn-default" href="#" role="button">View details »</a></p>-->
-<#--</div><!-- /.col-lg-4 &ndash;&gt;-->
-<#--<div class="col-lg-4">-->
-<#--<img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">-->
-<#--<h2>Heading</h2>-->
-<#--<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>-->
-<#--<p><a class="btn btn-default" href="#" role="button">View details »</a></p>-->
-<#--</div><!-- /.col-lg-4 &ndash;&gt;-->
-<#--</div>-->
-<#--<hr class="featurette-divider">-->
 
 <script src="/plugins/babel/browser.min.js"></script>
 <script src="/plugins/babel/polyfill.min.js"></script>

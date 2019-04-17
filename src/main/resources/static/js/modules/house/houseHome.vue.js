@@ -4,53 +4,53 @@
  */
 
 var vm = new Vue({
-	el: "#App",
-	data: {
-		id: "",
+    el: "#App",
+    data: {
+        id: "",
         provinceName: "",
-		cityCode: "",
-		cityName: "",
-		commuCode: "",
-		commuName: "",
-		building: "",
-		unit: "",
-		doorplate: "",
-		arer: "",
-		price: "",
-		room: "",
-		hall: "",
-		toilet: "",
-		type: "",
-		decoration: "",
-		face: "",
-		travel: "",
-		commuInfo: "",
-		decorationDes: "",
-		coreSelledPoint: "",
-		phone: "",
-		perPrice: "",
-		countryName: "",
-		countryCode: "",
-		provinceOptions: [],
-		cityOptions: [],
-		regionOptions: [],
-		options: [],
-		typeOptions: [{
+        cityCode: "",
+        cityName: "",
+        commuCode: "",
+        commuName: "",
+        building: "",
+        unit: "",
+        doorplate: "",
+        arer: "",
+        price: "",
+        room: "",
+        hall: "",
+        toilet: "",
+        type: "",
+        decoration: "",
+        face: "",
+        travel: "",
+        commuInfo: "",
+        decorationDes: "",
+        coreSelledPoint: "",
+        phone: "",
+        perPrice: "",
+        countryName: "",
+        countryCode: "",
+        provinceOptions: [],
+        cityOptions: [],
+        regionOptions: [],
+        options: [],
+        typeOptions: [{
             value: '全部',
             label: '全部'
         }, {
-			value: '公寓',
-			label: '公寓'
-		}, {
-			value: '别墅',
-			label: '别墅'
-		}, {
-			value: '平房',
-			label: '平房'
-		}, {
-			value: '普通住宅',
-			label: '普通住宅'
-		}, {
+            value: '公寓',
+            label: '公寓'
+        }, {
+            value: '别墅',
+            label: '别墅'
+        }, {
+            value: '平房',
+            label: '平房'
+        }, {
+            value: '普通住宅',
+            label: '普通住宅'
+        }, {
             value: '其他',
             label: '其他'
         }],
@@ -89,9 +89,12 @@ var vm = new Vue({
         checkListPrice: [],
         checkListArea: [],
         checkListRoom: [],
-		province: '',
-		cityId: '',
-		region: ''
-	},
+        province: '',
+        cityId: '',
+        region: ''
+    },
+    methods: {
+
+    }
 
 });

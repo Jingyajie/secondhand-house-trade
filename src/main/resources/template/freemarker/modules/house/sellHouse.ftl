@@ -79,6 +79,7 @@
 											<el-select v-model="region"
 											           size="small"
 											           @focus="getRegions"
+													   @change="regionChange"
 											           placeholder="请选择">
 												<el-option
 														v-for="(item, index) in regionOptions"
@@ -96,7 +97,7 @@
 										房源小区<span class="sellHouse-mark">*</span>
 									</label>
 									<div class="col-sm-9">
-										<el-input size="small" v-model="commuName" placeholder="请输入内容"></el-input>
+										<el-input size="small" v-model="commuName" placeholder=""></el-input>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -127,7 +128,7 @@
 										面积<span class="sellHouse-mark">*</span>
 									</label>
 									<div class="col-sm-5">
-                                        <el-input size="small" v-model="arer" placeholder="请输入内容"></el-input>
+                                        <el-input size="small" v-model="arer" placeholder=""></el-input>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -135,7 +136,7 @@
 										售价<span class="sellHouse-mark">*</span>
 									</label>
 									<div class="col-sm-5">
-                                        <el-input size="small" v-model="price" placeholder="请输入内容"></el-input>
+                                        <el-input size="small" v-model="price" placeholder=""></el-input>
 									</div>
 								</div>
 								<div class="form-group sellHouse-input-row1">
@@ -143,13 +144,13 @@
 										户型<span class="sellHouse-mark">*</span>
 									</label>
 									<div class="col-sm-2">
-                                        <el-input size="small" v-model="room" placeholder="请输入内容"></el-input>
+                                        <el-input size="small" v-model="room" placeholder=""></el-input>
 									</div>
 									<div class="col-sm-1 ">
 										<label class="control-label sellHouse-title">室</label>
 									</div>
 									<div class="col-sm-2">
-                                        <el-input size="small" v-model="hall" placeholder="请输入内容"></el-input>
+                                        <el-input size="small" v-model="hall" placeholder=""></el-input>
 									</div>
 									<div class="col-sm-1">
 										<span class="sellHouse-mark">厅</span>
@@ -304,7 +305,6 @@
 			</div>
 		</div>
 	</div>
-
 </div>
 <script src="/lib/jquery-3.3.1.js"></script>
 <script src="/lib/vue.js"></script>

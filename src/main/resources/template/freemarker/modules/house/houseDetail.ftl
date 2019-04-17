@@ -3,14 +3,13 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="/plugins/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="../../favicon.ico">
     <link href="/css/houseDetail.css" rel="stylesheet">
     <link href="/css/common.css" rel="stylesheet">
-    <script src="/lib/jquery-3.3.1.js"></script>
-    <script src="/plugins/js/bootstrap.min.js"></script>
     <title>二手房详情</title>
 </head>
 <body>
-<div class="navbar-wrapper common-container ">
+<div class="navbar-wrapper common-container " id="app" v-cloak>
     <div class="container">
         <nav class="navbar navbar-inverse">
             <div class="container">
@@ -21,10 +20,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="">首页</a></li>
-                        <li class="active"><a href="#">二手房</a></li>
-                        <li><a href="">经纪人</a></li>
-                        <li><a href="">发布房源</a></li>
+                        <li><a href="/index">首页</a></li>
+                        <li><a href="/house_home">二手房</a></li>
+                        <li><a href="/agent">经纪人</a></li>
+                        <li><a href="/sell-house">发布房源</a></li>
                     </ul>
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -34,9 +33,13 @@
                             <span class="glyphicon glyphicon-search" aria-hidden="true">
                         </button>
                     </form>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
-                        <li><a href="" data-toggle="modal" data-target="#myModal1">注册</a></li>
+                    <ul class="nav navbar-nav navbar-right"  v-if="loginShow">
+                        <li><a href="" data-toggle="modal" data-target="#myModal">&nbsp;{{loginLabel}}</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal1">&nbsp;{{logoutLabel}}</a></li>
+                        <li v-if="!loginShow">
+                            <li><a href="/self-center" data-toggle="modal" data-target="#myModal">&nbsp;{{loginLabel}}</a></li>
+                            <li><a href="/exit" data-toggle="modal" data-target="#myModal1">&nbsp;{{logoutLabel}}</a></li>
+                        </li>
                         <p class="navbar-text"><span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;热线电话1010-9666&nbsp;&nbsp;</p>
                     </ul>
                 </div>
@@ -224,6 +227,14 @@
         <p>© 2019 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </footer>
 </div>
+
+<script src="/plugins/babel/browser.min.js"></script>
+<script src="/plugins/babel/polyfill.min.js"></script>
+<script src="/lib/vue.js"></script>
+<script src="/lib/jquery-3.3.1.js"></script>
+<script src="/plugins/js/bootstrap.min.js"></script>
+<script src="/js/index.vue.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
 </body>
 </html>
 

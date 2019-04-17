@@ -10,7 +10,40 @@
 </head>
 <body>
 <div id="App">
-<#include "./header.ftl">
+    <div class="navbar-wrapper common-container ">
+        <div class="container">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img alt="Brand" src="image/house.png" style="width: 50px" class="common-brand-row">
+                        </a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/index">首页</a></li>
+                            <li class="active"><a href="#">二手房</a></li>
+                            <li><a href="/agent">经纪人</a></li>
+                            <li><a href="/sell-house">发布房源</a></li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="" placeholder="">
+                            </div>
+                            <button type="submit" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true">
+                            </button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
+                            <li><a href="" data-toggle="modal" data-target="#myModal1">注册</a></li>
+                            <p class="navbar-text"><span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;热线电话1010-9666&nbsp;&nbsp;</p>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -203,7 +236,7 @@
 		<hr class="featurette-divider">
 		<div class="row featurette">
 			<div class="col-md-7 col-md-push-5">
-				<h2 class="featurette-heading"><a href="">空间利用合理，户型方正，无浪费</a></h2>
+				<h2 class="featurette-heading"><a href="house_detail">空间利用合理，户型方正，无浪费</a></h2>
 				<div class="row houseHome-menu-row">
 					<div class="col-md-12 houseHome-menu-style"><span class="glyphicon glyphicon-home" aria-hidden="true">&nbsp;波尔多&nbsp;&nbsp;两室一厅|精装|100平方米
 					</div>
