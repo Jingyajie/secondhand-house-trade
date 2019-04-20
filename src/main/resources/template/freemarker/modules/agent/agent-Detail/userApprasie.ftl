@@ -1,17 +1,3 @@
-<style>
-    .pf .glyphicon {
-        color: orange;
-        user-select: none;
-        /*padding: 0px 10px;*/
-        font-size: 20px;
-        border-radius;
-
-        /*.pf li {*/
-            /*padding: 10px 0px;*/
-            /*font-size:16px;*/
-        /*}*/
-    }
-</style>
 <div class="container" id="userAppaiseId">
     <div class="row ">
         <div class="col-md-2 agentDetail-title">客户评价</div>
@@ -28,12 +14,14 @@
             <hr class="featurette-divider">
             <div>
                 <div class="row">
-                    <div class="col-md-2 personal-star pf">
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
-                        <span class="glyphicon glyphicon-star"></span>
+                    <div class="col-md-2 personal-star">
+                        <el-rate
+                                v-model="value"
+                                disabled
+                                show-text
+                                text-color="#ff9900"
+                                score-template="{value}">
+                        </el-rate>
                     </div>
                     <div class="col-md-3 common-font-style">非常推荐</div>
                     <div class="col-md-7 personal-date">2019.03.30</div>
@@ -86,58 +74,25 @@
                 <h4 class="modal-title index-title-go agentDetail-complain" id="ModalLabel">我要评价</h4>
             </div>
             <div class="modal-body">
-                <div class="pblockm" id="d1406010801010000002" data-rh-caption="块样式">
-                    <ul class="pf">
-                        <li data-rh-score="0">
-                            <span class="title" id="star1">房源</span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="tip"></span>
-                        </li>
-                        <li data-rh-score="0">
-                            <span class="title" id="star2">服务</span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="tip"></span>
-                        </li>
-                        <li data-rh-score="0">
-                            <span class="title" id="star3">评价</span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="tip"></span>
-                        </li>
-                    </ul>
+                <span>房源：</span>
+                <el-rate
+                        v-model="houseResource"
+                        show-score
+                        text-color="#ff9900">
+                </el-rate>
+                <span>服务：</span>
+                <el-rate
+                        v-model="service"
+                        show-score
+                        text-color="#ff9900">
+                </el-rate>
+                <span>评价：</span>
+                <el-rate
+                        v-model="apprasie"
+                        show-score
+                        text-color="#ff9900">
+                </el-rate>
 
-                </div>
-            <#--<button type="button" name="btnSubmit" class="btnSubmit" id="btnSubmit">提交</button>-->
-                <script src="/lib/jquery-3.3.1.js" type="text/javascript"></script>
-                <script>
-                    var tip=['','1.0分','2.0分','3.0分','4.0分','55.0分'];
-                    $('.pf').on('mousedown','.glyphicon',function(){
-                        if($(this).hasClass('glyphicon-star')){
-                            var score = 0;
-                            $(this).parent().attr('data-rh-score' ,score);
-                            $(this).addClass('glyphicon-star-empty').removeClass('glyphicon-star').siblings('.glyphicon').addClass('glyphicon-star-empty').removeClass('glyphicon-star');
-                            $(this).nextAll('.tip').text(tip[0]);
-                        }else{
-                            var score = $(this).index();
-                            $(this).parent().attr('data-rh-score' ,score);
-                            $(this).addClass('glyphicon-star').removeClass('glyphicon-star-empty').prevAll('.glyphicon').addClass('glyphicon-star').removeClass('glyphicon-star-empty');
-                            $(this).nextAll('.tip').text(tip[score]);
-                        }
-                    });
-                    // var fs1 = $('#star1').nextAll('.rater-star-result').text();
-
-                </script>
                 <hr class="featurette-divider">
                 <form>
                     <div class="form-group">

@@ -1,12 +1,12 @@
-<div class="col-md-9" id="publishedHouse">
+<div class="col-md-9" id="myAppaiseId">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">修改房源</h3>
+            <h3 class="panel-title">房屋状态管理</h3>
         </div>
         <div class="panel-body">
             <div class="row featurette">
                 <div class="col-md-7 col-md-push-5">
-                    <h3 class="featurette-heading"><a href="/house_detail">空间利用合理，户型方正，无浪费</a></h3>
+                    <h3 class="featurette-heading"><a href="/sell_plan">空间利用合理，户型方正，无浪费</a></h3>
                     <div class="row houseHome-menu-row">
                         <div class="col-md-12 personal-menu-style"><span class="glyphicon glyphicon-home" aria-hidden="true">&nbsp;波尔多&nbsp;&nbsp;两室一厅|精装|100平方米
                         </div>
@@ -21,7 +21,7 @@
                     <div class="row houseHome-menu-row">
                         <div class="col-md-8 personal-menu-style"><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;发布人：向冰冰</div>
                         <div class="col-md-4 personal-button">
-                            <button class="btn btn-default" type="submit">修改信息</button>
+                            <button class="btn btn-default" type="submit">待销售</button>
                         </div>
                     </div>
                 </div>

@@ -32,6 +32,11 @@ public class IndexController {
 		return "modules/demo/demo";
 	}
 
+	@GetMapping(value = {"/manager"})
+	public String system() {
+		return "modules/system/manager";
+	}
+
 	@GetMapping(value = {"/agent"})
 	public String agent() {
 		return "modules/agent/agent";
@@ -42,7 +47,7 @@ public class IndexController {
 		return "modules/manage/manage";
 	}
 
-	@GetMapping(value = "/houseHome")
+	@GetMapping(value = "/house_home")
 	public String house() {
 		return "modules/house/houseHome";
 	}
@@ -52,27 +57,27 @@ public class IndexController {
 		return "modules/house/sellHouse";
 	}
 
-	@GetMapping(value = "/personalCenter")
+	@GetMapping(value = "/personal_center")
 	public String personalCenter() {
 		return "modules/user/personalCenter";
 	}
 
-	@GetMapping(value = "/agentCenter")
+	@GetMapping(value = "/agent_center")
 	public String agentCenter() {
 		return "modules/user/agentCenter";
 	}
 
-	@GetMapping(value = "/houseDetail")
+	@GetMapping(value = "/house_detail")
 	public String houseDetail() {
 		return "modules/house/houseDetail";
 	}
 
-	@GetMapping(value = "/agentDetail")
+	@GetMapping(value = "/agent_detail")
 	public String agentDetail() {
 		return "modules/agent/agentDetail";
 	}
 
-	@GetMapping(value = "/sellPlan")
+	@GetMapping(value = "/sell_plan")
 	public String sellPlan() {
 		return "modules/house/sellPlan";
 	}

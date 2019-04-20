@@ -24,10 +24,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="">首页</a></li>
-                        <li><a href="#">二手房</a></li>
-                        <li><a href="">经纪人</a></li>
-                        <li><a href="">发布房源</a></li>
+                        <li><a href="/index">首页</a></li>
+                        <li><a href="/house_home">二手房</a></li>
+                        <li><a href="/agent">经纪人</a></li>
+                        <li><a href="/sell-house">发布房源</a></li>
                     </ul>
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -38,23 +38,8 @@
                         </button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>登录<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">用户登录</a></li>
-                                <li><a href="#">经纪人登录</a></li>
-                                <li><a href="#">admin登录</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                注册<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">注册普通用户</a></li>
-                                <li><a href="#">注册经纪人</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal1">注册</a></li>
                         <p class="navbar-text"><span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;热线电话1010-9666&nbsp;&nbsp;</p>
                     </ul>
                 </div>
@@ -81,15 +66,14 @@
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li role="presentation" id="personalInfoTitleId" class="active" onclick="changeInfoContent('personalInfoId', 'personalInfoTitleId')"><a>个人资料</a></li>
-                <li role="presentation" id="publishedHouseTitle" onclick="changeInfoContent('publishedHouse', 'publishedHouseTitle')"><a>已发布房源</a></li>
-                <li role="presentation" id="myAppaiseTitleId" onclick="changeInfoContent('myAppaiseId', 'myAppaiseTitleId')"><a>我的评价</a></li>
-                <li role="presentation" id="followAgentTitleId" onclick="changeInfoContent('followAgentId', 'followAgentTitleId')"><a>我关注的经纪人</a></li>
+                <li role="presentation" id="publishedHouseTitle" onclick="changeInfoContent('publishedHouse', 'publishedHouseTitle')"><a>修改房源</a></li>
+                <li role="presentation" id="myAppaiseTitleId" onclick="changeInfoContent('myAppaiseId', 'myAppaiseTitleId')"><a>房屋状态管理</a></li>
+                <#--<li role="presentation" id="followAgentTitleId" onclick="changeInfoContent('followAgentId', 'followAgentTitleId')"><a></a></li>-->
             </ul>
         </div>
         <#include "./personal-center/personal-info.ftl">
-        <#include "./personal-center/my-appraise.ftl">
+        <#include "personal-center/house-state.ftl">
         <#include "./personal-center/published-house.ftl">
-        <#include "./personal-center/follow-agent.ftl">
     </div>
 </div>
 <script>

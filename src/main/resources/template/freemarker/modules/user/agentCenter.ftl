@@ -3,6 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="/plugins/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/plugins/element-ui-2.7.2/lib/theme-chalk/index.css">
     <link href="/css/personalCenter.css" rel="stylesheet">
     <link href="/css/houseHome.css" rel="stylesheet">
     <link href="/css/common.css" rel="stylesheet">
@@ -23,10 +24,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="">首页</a></li>
-                        <li><a href="#">二手房</a></li>
-                        <li><a href="">经纪人</a></li>
-                        <li><a href="">发布房源</a></li>
+                        <li><a href="/index">首页</a></li>
+                        <li><a href="/house_home">二手房</a></li>
+                        <li><a href="/agent">经纪人</a></li>
+                        <li><a href="/sell-house">发布房源</a></li>
                     </ul>
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -37,23 +38,8 @@
                         </button>
                     </form>
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>登录<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">用户登录</a></li>
-                                <li><a href="#">经纪人登录</a></li>
-                                <li><a href="#">admin登录</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                注册<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">注册普通用户</a></li>
-                                <li><a href="#">注册经纪人</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
+                        <li><a href="" data-toggle="modal" data-target="#myModal1">注册</a></li>
                         <p class="navbar-text"><span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;热线电话1010-9666&nbsp;&nbsp;</p>
                     </ul>
                 </div>
@@ -61,7 +47,7 @@
         </nav>
     </div>
 </div>
-<div class="container">
+<div class="container" id="app">
     <div class="row personalCenter-row">
         <div class="col-md-2">
             <img src="image/head.jpg" alt="" class="img-circle" style="width: 100px;">
@@ -80,7 +66,7 @@
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li role="presentation" id="agentInfoTitleId" class="active" onclick="changeInfoContent('agentInfoId', 'agentInfoTitleId')"><a>个人资料</a></li>
-                <li role="presentation" id="successHouseTitleId" onclick="changeInfoContent('successHouseId', 'successHouseTitleId')"><a>已成交房源</a></li>
+                <li role="presentation" id="successHouseTitleId" onclick="changeInfoContent('successHouseId', 'successHouseTitleId')"><a>房屋状态管理</a></li>
                 <li role="presentation" id="agentPublishedHouseTitle" onclick="changeInfoContent('agentPublishedHouse', 'agentPublishedHouseTitle')"><a>已发布房源</a></li>
                 <li role="presentation" id="careerInfoTitleId" onclick="changeInfoContent('careerInfoId', 'careerInfoTitleId')"><a>基本职业信息</a></li>
             </ul>
@@ -100,6 +86,10 @@
 <script>
     agentCenterApp.init();
 </script>
+<script src="/lib/vue.js"></script>
+<script src="/lib/axios-v0.18.0.min.js"></script>
+<script src="/plugins/element-ui-2.7.2/lib/index.js"></script>
+<script src="/js/modules/user/agent-center.vue.js"></script>
 </body>
 </html>
 

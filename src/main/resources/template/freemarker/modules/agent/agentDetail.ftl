@@ -3,13 +3,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="/plugins/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/plugins/element-ui-2.7.2/lib/theme-chalk/index.css">
     <link href="/css/agentDetail.css" rel="stylesheet">
+    <link href="/css/houseDetail.css" rel="stylesheet">
     <link href="/css/houseHome.css" rel="stylesheet">
     <link href="/css/personalCenter.css" rel="stylesheet">
     <link href="/css/common.css" rel="stylesheet">
     <script src="/lib/jquery-3.3.1.js"></script>
-    <script src="/plugins/js/bootstrap.min.js"></script>
     <script src="/js/agent/agentDetail.js"></script>
+    <script src="/plugins/js/bootstrap.min.js"></script>
     <title>经纪人详情</title>
 </head>
 <body>
@@ -24,10 +26,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="">首页</a></li>
-                        <li class="active"><a href="#">二手房</a></li>
-                        <li><a href="">经纪人</a></li>
-                        <li><a href="">发布房源</a></li>
+                        <li><a href="/index">首页</a></li>
+                        <li><a href="/house_home">二手房</a></li>
+                        <li><a href="/agent">经纪人</a></li>
+                        <li><a href="/sell-house">发布房源</a></li>
                     </ul>
                     <form class="navbar-form navbar-left">
                         <div class="form-group">
@@ -49,7 +51,7 @@
 </div>
 <#include "../signup.ftl">
 <#include "../load.ftl">
-<div class="agentDetail-bg">
+<div class="agentDetail-bg" id="App">
     <div class="shop-banner "></div>
     <div class="infos-box clearfix">
         <a class="portrait" href="" target="_blank">
@@ -68,7 +70,17 @@
                 <div class="col-md-6 agentDetail-phone"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>查看电话</div>
             </div>
             <div class="row agentDetail-levelRow">
-                <div class="col-md-3 agentDetail-level">等级：</div>
+                <div class="col-md-1 agentDetail-level">
+                    <span>等级：</span>
+                </div>
+                <div class="col-md-3 agentDetail-level">
+                    <el-rate
+                            v-model="value"
+                            disabled
+                            text-color="#ff9900"
+                            score-template="{value}">
+                    </el-rate>
+                </div>
                 <div class="col-md-6 agentDetail-level">
                     <span class="agentDetail-level">
                         <em>房源：</em>
@@ -112,6 +124,10 @@
 <script>
     agentDetailApp.init();
 </script>
+<script src="/lib/vue.js"></script>
+<script src="/lib/axios-v0.18.0.min.js"></script>
+<script src="/plugins/element-ui-2.7.2/lib/index.js"></script>
+<script src="/js/modules/agent/agentDetail.vue.js"></script>
 </body>
 </html>
 

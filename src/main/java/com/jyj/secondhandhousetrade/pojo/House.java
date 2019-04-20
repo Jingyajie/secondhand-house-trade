@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 public class House {
 
     private int id;
+    private String provinceName;
     private int cityCode;
     private String cityName;
     private int commuCode;
@@ -48,6 +49,14 @@ public class House {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getProvinceName() {
+        return provinceName;
+    }
+
+    public void setProvinceName(String provinceName) {
+        this.provinceName = provinceName;
     }
 
     public int getCityCode() {
