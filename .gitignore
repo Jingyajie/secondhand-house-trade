@@ -4,8 +4,24 @@
 
 # IntelliJ project files
 .idea
+.idea/
 *.iml
 out
 gen
-/logs/iorder
-/src/main/resources/*.yml
+src/main/resources/*.yml
+target
+/out
+/classes
+/checkouts
+/.lein-*
+/.env
+.DS_Store
+*/target
+.svn
+.project
+.settings
+.classpath
+logs
+/log
+/tmp
+hotspot.log
