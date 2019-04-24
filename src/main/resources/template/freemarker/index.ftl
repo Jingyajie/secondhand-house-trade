@@ -16,13 +16,9 @@
 	<div class="row index-login-out-row">
 		<div class="col-md-10"></div>
 		<div class="col-md-2 index-login-out-text">
-			<div v-if="loginShow">
-				<a class="a-text" href="#" data-toggle="modal" data-target="#myModal">&nbsp;{{loginLabel}}</a>
-				<a class="a-text" href="#" data-toggle="modal" data-target="#myModal1">&nbsp;{{logoutLabel}}</a>
-			</div>
-			<div v-if="!loginShow">
-				<a class="a-text" href="/self-center" data-toggle="modal">&nbsp;{{loginLabel}}</a>
-				<a class="a-text" href="/exit" data-toggle="modal">&nbsp;{{logoutLabel}}</a>
+			<div>
+				<a class="a-text" href="/login">登录</a>
+				<a class="a-text" href="/register">注册</a>
 			</div>
 		</div>
 	</div>
@@ -54,8 +50,6 @@
 			</div><!-- /input-group --></div>
 		<div class="col-md-3"></div>
 	</div>
-<#include "modules/signup.ftl">
-<#include "modules/load.ftl">
 </div>
 
 <script src="/plugins/babel/browser.min.js"></script>

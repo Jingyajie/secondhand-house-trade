@@ -10,6 +10,8 @@ const vm = new Vue({
 		userRegLabel: "",
 		regAccount: "",
 		regPassword: "",
+		regPhone: "",
+		regEmail: "",
 		confirmRegPassword: "",
 		regUserType: "",
 		loginAccount: "",
@@ -49,7 +51,9 @@ const vm = new Vue({
 				data = {
 					username: this.regAccount,
 					password: this.regPassword,
-					type: this.regUserType
+					type: this.regUserType,
+					email: this.regEmail,
+					phone: this.regPhone
 				}
 			}
 
@@ -61,10 +65,9 @@ const vm = new Vue({
 				success(data) {
 					if (data instanceof Object) {
 						if (data.code > 0) {
-							$('#myModal1').modal('hide');
-							_this.askForSession();
+							window.location.href = "/login";
 						} else {
-
+							_this.$message.error('注册失败！');
 						}
 					}
 				},
