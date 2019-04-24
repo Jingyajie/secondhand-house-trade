@@ -5,6 +5,9 @@ import com.jyj.secondhandhousetrade.pojo.User;
 import com.jyj.secondhandhousetrade.service.CommonService;
 import com.jyj.secondhandhousetrade.service.UserService;
 import org.apache.ibatis.annotations.Arg;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -97,20 +100,24 @@ public class IndexController {
 	}
 
 	@PostMapping(value = "/login")
-	@ResponseBody
-	public ViewResult login(@RequestParam("username") String username,
-	                        @RequestParam("password") String password,
-	                        @RequestParam(value = "code", required = false) String code,
-	                        HttpSession session) {
+	public String login(@RequestParam("username") String username,
+	                    @RequestParam("password") String password,
+	                    @RequestParam(value = "code", required = false) String code,
+	                    HttpSession session) {
 		ViewResult vr = ViewResult.instance();
 		User user = userService.findByUsername(username, password);
+		/*UsernamePasswordToken token = new UsernamePasswordToken(username, password);
+		token.setRememberMe(true);
+		Subject currentUser = SecurityUtils.getSubject();
+		currentUser.login(token);*/
 		if (user != null) {
 			vr.setData(user);
 			vr.setCode(1);
 			vr.setMsg("登录成功");
 		}
 		session.setAttribute("vr", vr);
-		return vr;
+		return "/index";
+
 	}
 
 	@GetMapping(value = "/session")
@@ -140,12 +147,12 @@ public class IndexController {
 	}
 
 	@GetMapping("/login")
-	public String login(){
+	public String login() {
 		return "login";
 	}
 
 	@GetMapping("/register")
-	public String register(){
+	public String register() {
 		return "register";
 	}
 }
