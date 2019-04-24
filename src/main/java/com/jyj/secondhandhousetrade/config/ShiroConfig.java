@@ -60,7 +60,7 @@ public class ShiroConfig {
 
 		filterChainDefinitionMap.put("/kaptcha", "anon");
 
-		filterChainDefinitionMap.put("/**", "authc");
+		filterChainDefinitionMap.put("/**", "anon");
 		shiroFilter.setFilterChainDefinitionMap(filterChainDefinitionMap);
 		return shiroFilter;
 	}
