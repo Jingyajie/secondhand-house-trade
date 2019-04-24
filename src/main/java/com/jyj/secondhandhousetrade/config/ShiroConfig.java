@@ -3,10 +3,14 @@ package com.jyj.secondhandhousetrade.config;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.session.mgt.SessionManager;
+import org.apache.shiro.session.mgt.eis.CachingSessionDAO;
+import org.apache.shiro.session.mgt.eis.SessionDAO;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
+import org.apache.shiro.web.servlet.ShiroHttpSession;
+import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.context.annotation.Bean;
@@ -36,15 +40,19 @@ public class ShiroConfig {
 		// 设置login URL
 		shiroFilter.setLoginUrl("/login");
 		// 登录成功后要跳转的链接
-		shiroFilter.setSuccessUrl("/main");
+		shiroFilter.setSuccessUrl("/index");
+
+		filterChainDefinitionMap.put("/", "anon");
+		filterChainDefinitionMap.put("/register", "anon");
+		filterChainDefinitionMap.put("/index", "anon");
 		filterChainDefinitionMap.put("/webjars/**", "anon");
 		filterChainDefinitionMap.put("/druid/**", "anon");
 		//静态资源的处理
 		filterChainDefinitionMap.put("/js/**", "anon");
+		filterChainDefinitionMap.put("/plugins/**", "anon");
+		filterChainDefinitionMap.put("/lib/**", "anon");
 		filterChainDefinitionMap.put("/css/**", "anon");
-		filterChainDefinitionMap.put("/asserts/**", "anon");
-		filterChainDefinitionMap.put("/fonts/**", "anon");
-		filterChainDefinitionMap.put("/images/**", "anon");
+		filterChainDefinitionMap.put("/image/**", "anon");
 
 		// 退出系统的过滤器
 		filterChainDefinitionMap.put("/logout", "logout");
@@ -71,6 +79,7 @@ public class ShiroConfig {
 		shiroRealm.setCredentialsMatcher(hashedCredentialsMatcher);
 		return shiroRealm;
 	}
+
 	//shiro使用缓存ehcachae
 	@Bean
 	public EhCacheManager ehCacheManager() {
@@ -81,10 +90,11 @@ public class ShiroConfig {
 	}
 
 	@Bean
-	public SessionManager sessionManager(){
+	public SessionManager sessionManager(SimpleCookie simpleCookie) {
 		DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
 		sessionManager.setSessionValidationSchedulerEnabled(true);
 		sessionManager.setSessionIdCookieEnabled(true);
+		sessionManager.setSessionIdCookie(simpleCookie);
 		return sessionManager;
 	}
 
@@ -93,8 +103,12 @@ public class ShiroConfig {
 		DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
 		securityManager.setRealm(shiroRealm);
 		securityManager.setSessionManager(sessionManager);
-
 		return securityManager;
+	}
+
+	@Bean
+	public SimpleCookie simpleCookie() {
+		return new SimpleCookie("session.id");
 	}
 
 	@Bean
@@ -110,7 +124,7 @@ public class ShiroConfig {
 	}
 
 	@Bean
-	public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(DefaultWebSecurityManager securityManager){
+	public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(DefaultWebSecurityManager securityManager) {
 		AuthorizationAttributeSourceAdvisor advisor = new AuthorizationAttributeSourceAdvisor();
 		advisor.setSecurityManager(securityManager);
 		return advisor;

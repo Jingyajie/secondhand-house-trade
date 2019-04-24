@@ -21,7 +21,7 @@
 							<label class="control-label">密码</label>
 						</div>
 						<div class="col-md-8">
-							<input type="password" v-model="regPassword" class="form-control"
+							<input type="password"  class="form-control"
 							       placeholder="">
 						</div>
 					</div>
@@ -30,7 +30,7 @@
 							<label class="control-label">确认密码</label>
 						</div>
 						<div class="col-md-8">
-							<input type="password" v-model="confirmRegPassword" class="form-control"
+							<input type="password" class="form-control"
 							       placeholder="">
 						</div>
 					</div>
@@ -43,7 +43,7 @@
 							<label for="two">注册经纪人</label>
 						</div>
 						<div class="col-sm-offset-2 col-sm-10 index-title-go">
-							<button type="button" class="btn btn-default" @click="register">注册</button>
+							<button type="button" class="btn btn-default" >注册</button>
 						</div>
 					</div>
 				</div>

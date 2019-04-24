@@ -138,4 +138,14 @@ public class IndexController {
 
 		return vr.code(1).msg("成功").data(commonService.getArea());
 	}
+
+	@GetMapping("/login")
+	public String login(){
+		return "login";
+	}
+
+	@GetMapping("/register")
+	public String register(){
+		return "register";
+	}
 }
