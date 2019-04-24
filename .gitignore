@@ -3,12 +3,10 @@
 ### Example user template
 
 # IntelliJ project files
-.idea
-.idea/
 *.iml
 out
 gen
-src/main/resources/*.yml
+/src/main/resources/*.yml
 target
 /out
 /classes
@@ -25,3 +23,6 @@ logs
 /log
 /tmp
 hotspot.log
+
+!/lib/
+!/.idea/
